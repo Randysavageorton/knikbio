@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy and Cookie Policy | KNIK BIO</title>
+<meta name="description" content="Revised draft of the KNIK BIO legal and system pages: privacy and cookie policy, terms, search, 404, sitemap, files and launch gate.">
+<script>document.documentElement.className=document.documentElement.className.replace('no-js','js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --ink:#1A2328;
+  --ink-2:#202B31;
+  --ink-3:#28343A;
+  --on-ink:#FFFFFF;
+  --on-ink-2:#A3B0B5;
+  --on-ink-3:#7F8D93;
+  --line-ink:rgba(255,255,255,.09);
+  --paper:#F2F4F3;
+  --surface:#FFFFFF;
+  --text:#1A2328;
+  --text-2:#4B585E;
+  --text-3:#6B787D;
+  --line:#DCE1DF;
+  --teal:#1E7F74;
+  --teal-soft:#E3EFEC;
+  --teal-on-ink:#6FC0B3;
+  --btn-bg:#1A2328;
+  --btn-fg:#FFFFFF;
+  --illus:#EDF0EE;
+  --illus-stroke:#43525A;
+  --illus-fill:#CFE3DF;
+
+  --wrap:1290px;
+  --gutter:clamp(20px,4vw,32px);
+  --f-head:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"IBM Plex Sans","Segoe UI",Roboto,Arial,sans-serif;
+
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#121A1E;--ink-2:#172125;--ink-3:#1F2A2F;
+    --paper:#172024;--surface:#1D272C;--text:#E6ECEA;--text-2:#B0BCC0;--text-3:#8E9CA1;
+    --line:#2D393F;--teal:#6FC0B3;--teal-soft:#1F3431;--btn-bg:#E6ECEA;--btn-fg:#121A1E;
+    --illus:#212C31;--illus-stroke:#A9B7BC;--illus-fill:#2B4541;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#121A1E;--ink-2:#172125;--ink-3:#1F2A2F;
+  --paper:#172024;--surface:#1D272C;--text:#E6ECEA;--text-2:#B0BCC0;--text-3:#8E9CA1;
+  --line:#2D393F;--teal:#6FC0B3;--teal-soft:#1F3431;--btn-bg:#E6ECEA;--btn-fg:#121A1E;
+  --illus:#212C31;--illus-stroke:#A9B7BC;--illus-fill:#2B4541;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{background:var(--ink);scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--f-head);margin:0;font-weight:600;letter-spacing:-.02em;line-height:1.12}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--surface);color:var(--text);padding:10px 14px;z-index:100}
+.skip:focus{left:12px;top:12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- Top bar (matches reference) ---------- */
+.topbar{background:var(--ink);color:var(--on-ink-2);font-size:14px}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:42px;gap:20px}
+.topbar a{text-decoration:none}
+.topbar a:hover{color:var(--on-ink)}
+.topbar-left{display:flex;gap:28px;align-items:center}
+.topbar-left a:first-child{color:#E4E9EB}
+.topbar-right{display:flex;gap:28px;align-items:center}
+.topbar-lang{color:var(--on-ink);font-weight:500}
+
+/* ---------- Header (matches reference) ---------- */
+.site-header{background:var(--surface);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:82px;gap:24px}
+.logo{font-family:var(--f-head);font-size:25px;letter-spacing:-.02em;text-decoration:none;color:var(--text);white-space:nowrap;line-height:1}
+.logo b{font-weight:600}
+.logo span{font-weight:300;color:var(--text-3);margin-left:4px}
+.main-nav ul{list-style:none;display:flex;gap:31px;margin:0;padding:0}
+.main-nav a{font-size:16.5px;text-decoration:none;color:var(--text);padding:8px 0;position:relative}
+.main-nav a:hover{color:var(--teal)}
+.main-nav a[aria-current="page"]::after{content:"";position:absolute;left:0;right:0;bottom:1px;height:2px;background:var(--teal)}
+.btn-quote{display:inline-flex;align-items:center;height:50px;padding:0 23px;background:var(--btn-bg);color:var(--btn-fg);text-decoration:none;font-weight:500;font-size:16px;white-space:nowrap}
+.btn-quote:hover{opacity:.88}
+.nav-quote{display:none}
+.menu-btn{display:none;background:none;border:1px solid var(--line);height:44px;padding:0 14px;font:inherit;font-size:15px;color:var(--text);cursor:pointer}
+
+/* ---------- Hero ---------- */
+.hero{background-color:var(--ink);color:var(--on-ink);position:relative;overflow:hidden;
+  background-image:repeating-linear-gradient(90deg,var(--line-ink) 0 1px,transparent 1px 86px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:stretch;min-height:560px}
+.hero-copy{padding:56px 0 64px;display:flex;flex-direction:column;justify-content:center}
+.crumbs{font-size:14px;color:var(--on-ink-3);margin-bottom:40px}
+.crumbs ol{list-style:none;margin:0;padding:0;display:flex;gap:8px}
+.crumbs li+li::before{content:"/";margin-right:8px;color:var(--on-ink-3)}
+.crumbs a{text-decoration:none;color:var(--on-ink-2)}
+.crumbs a:hover{color:var(--on-ink)}
+.crumbs [aria-current]{color:var(--on-ink)}
+.hero-eyebrow{font-size:15px;color:var(--teal-on-ink);margin-bottom:18px;font-weight:500}
+.hero h1{font-size:clamp(40px,5.2vw,66px);font-weight:600;letter-spacing:-.03em;line-height:1.02;max-width:12ch}
+.hero-body{margin-top:26px;color:var(--on-ink-2);font-size:18px;max-width:54ch}
+.hero-actions{margin-top:36px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 24px;font-weight:500;font-size:16px;text-decoration:none;border:1px solid transparent;white-space:nowrap}
+.btn-light{background:#FFFFFF;color:#1A2328}
+.btn-light:hover{background:#E4ECE9}
+.btn-ghost{border-color:rgba(255,255,255,.34);color:#FFFFFF}
+.btn-ghost:hover{border-color:#FFFFFF}
+.hero-trust{margin-top:30px;padding-top:20px;border-top:1px solid var(--line-ink);font-size:15px;color:var(--on-ink-2);max-width:54ch}
+.hero-figure{position:relative;background:var(--ink-2);margin-right:calc(-1 * var(--gutter));display:flex;align-items:flex-end;padding:40px 28px 0}
+.hero-figure::after{content:"";position:absolute;left:0;top:0;bottom:0;width:1px;background:var(--line-ink)}
+.hero-figure svg{width:100%;height:auto}
+@media (min-width:1291px){.hero-figure{margin-right:calc((var(--wrap) - 100vw)/2 - var(--gutter))}}
+
+/* ---------- Section nav ---------- */
+.section-nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.section-nav .wrap{overflow-x:auto;scrollbar-width:none}
+.section-nav .wrap::-webkit-scrollbar{display:none}
+.section-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:30px;height:58px;align-items:stretch;white-space:nowrap}
+.section-nav a{display:flex;align-items:center;height:100%;text-decoration:none;font-size:15px;color:var(--text-2);border-bottom:2px solid transparent}
+.section-nav a:hover{color:var(--text)}
+.section-nav a.is-active{color:var(--text);border-bottom-color:var(--teal)}
+
+/* ---------- Sections ---------- */
+.section{padding:clamp(64px,8vw,104px) 0}
+.section.bg-surface{background:var(--surface)}
+.section.bg-paper{background:var(--paper)}
+.section-head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:48px;align-items:end;margin-bottom:48px}
+.section-head h2{font-size:clamp(32px,3.6vw,46px);max-width:16ch}
+.section-head p{color:var(--text-2);max-width:58ch}
+.text-link{color:var(--teal);font-weight:500;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.text-link:hover{text-decoration-thickness:2px}
+
+
+
+/* ---------- Page overrides ---------- */
+.hero{background-image:linear-gradient(var(--line-ink) 1px,transparent 1px),linear-gradient(90deg,var(--line-ink) 1px,transparent 1px);background-size:58px 58px;background-position:-1px -1px}
+.hero h1{max-width:14ch}
+.hero-figure svg{max-height:470px}
+.no-js .fbar,.no-js .fnote{display:none}
+
+/* At a glance */
+.section.figures{padding:clamp(48px,6vw,80px) 0 clamp(56px,7vw,88px)}
+.figs{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.35fr) minmax(0,.95fr) minmax(0,1.15fr);margin:0;border-top:2px solid var(--text)}
+.figs div{display:flex;flex-direction:column;padding:26px 24px 0 0}
+.figs div+div{padding-left:24px;border-left:1px solid var(--line)}
+.figs dd{order:-1;margin:0;font-family:var(--f-head);font-size:clamp(32px,3.4vw,46px);font-weight:500;letter-spacing:-.03em;line-height:1;white-space:nowrap;font-variant-numeric:tabular-nums}
+.figs dt{margin-top:12px;color:var(--text-2);font-size:16px;max-width:24ch}
+
+.smap{--lab:168px;position:relative;margin-top:56px;background:var(--paper);border:1px solid var(--line);padding:22px 24px 14px}
+.smap-plotbg{position:absolute;top:22px;bottom:14px;left:calc(24px + var(--lab));right:24px;pointer-events:none}
+.sm-band{position:absolute;top:0;bottom:0;background:var(--teal-soft);opacity:.7}
+.sm-dec{position:absolute;top:44px;bottom:0;width:1px;background:var(--line)}
+.sm-bound{position:absolute;top:0;bottom:0;width:0;border-left:1px dashed var(--text-3);opacity:.6}
+.smap-head{position:relative;margin-left:var(--lab);height:52px}
+.sm-bands span{position:absolute;top:0;padding-left:10px;font-size:13.5px;line-height:1.3;color:var(--text);white-space:nowrap;overflow:hidden}
+.sm-bands b{font-weight:600}
+.sm-bands .short{display:none}
+.sm-ticks span{position:absolute;top:28px;transform:translateX(-50%);font-size:12.5px;color:var(--text-3);white-space:nowrap;font-variant-numeric:tabular-nums}
+.sm-ticks .edge-l{transform:none}
+.sm-ticks .edge-r{transform:translateX(-100%)}
+.smap-rows{position:relative;list-style:none;margin:0;padding:0}
+.smap-rows a{display:grid;grid-template-columns:var(--lab) 1fr;align-items:center;min-height:30px;text-decoration:none;color:var(--text)}
+.smap-rows a:hover .sm-label,.smap-rows a:focus-visible .sm-label{color:var(--teal)}
+.smap-rows a:hover .sm-track::before{background:var(--text-3)}
+.sm-label{font-family:var(--f-head);font-size:14.5px;font-weight:500;letter-spacing:-.01em;font-variant-numeric:tabular-nums;padding-right:12px}
+.sm-track{position:relative;height:30px}
+.sm-track::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--line)}
+.sm-dot{position:absolute;top:50%;width:10px;height:10px;border-radius:50%;background:var(--teal);transform:translate(-50%,-50%);box-shadow:0 0 0 2px var(--paper)}
+.sm-rng{position:absolute;top:50%;height:4px;background:var(--teal);transform:translateY(-50%)}
+.sm-lnk{position:absolute;top:50%;height:1.5px;background:var(--teal);transform:translateY(-50%)}
+.sm-none{position:absolute;left:0;right:0;top:50%;border-top:1px dashed var(--text-3);opacity:.7}
+
+/* Projects: filter bar */
+.fbar{position:sticky;top:calc(env(safe-area-inset-top,0px) + 59px);z-index:15;background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fbar-row{display:flex;align-items:center;gap:12px;min-height:72px;padding:12px 0}
+.ftoggle{display:none}
+.ffields{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.fld{position:relative;display:flex;align-items:center;height:46px;border:1px solid var(--line);background:var(--surface)}
+.fld:focus-within{border-color:var(--teal)}
+.fld.is-on{border-color:var(--text)}
+.fld label{padding:0 4px 0 14px;font-size:14px;color:var(--text-3);white-space:nowrap}
+.fld select{appearance:none;-webkit-appearance:none;background:transparent;border:0;height:100%;font:inherit;font-size:15px;font-weight:500;color:var(--text);padding:0 36px 0 6px;cursor:pointer;max-width:250px;text-overflow:ellipsis}
+.fld select:focus{outline:none}
+.fld::after{content:"";position:absolute;right:15px;top:50%;width:7px;height:7px;border-right:1.5px solid var(--text-2);border-bottom:1.5px solid var(--text-2);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.fld select option{color:#1A2328;background:#FFFFFF}
+.freset{height:46px;padding:0 16px;background:transparent;border:1px solid transparent;font:inherit;font-size:15px;font-weight:500;color:var(--teal);cursor:pointer;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.freset:hover{text-decoration-thickness:2px}
+.freset[disabled]{color:var(--text-3);text-decoration:none;cursor:default}
+.fcount{margin-left:auto;font-size:15px;color:var(--text-2);white-space:nowrap;font-variant-numeric:tabular-nums}
+.fcount b{color:var(--text);font-weight:600}
+.fnote{margin:18px 0 28px;font-size:14.5px;color:var(--text-3)}
+
+/* Projects: cards */
+.pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.pcard{background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column;scroll-margin-top:96px}
+.pcard[hidden]{display:none}
+.pcard:target{border-color:var(--teal);box-shadow:0 0 0 1px var(--teal)}
+.pcard-illus{aspect-ratio:3/2;background-color:var(--illus);color:var(--illus-stroke);border-bottom:1px solid var(--line);
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:24px 24px;background-position:-1px -1px;display:flex;align-items:center;justify-content:center;padding:14px 18px 10px}
+.pcard-illus svg{width:100%;height:100%}
+.pcard-body{padding:24px 24px 22px;display:flex;flex-direction:column;flex:1}
+.pcard-scale{font-family:var(--f-head);font-size:28px;font-weight:500;letter-spacing:-.025em;line-height:1.05;font-variant-numeric:tabular-nums}
+.pcard-scale span{display:block;font-family:var(--f-body);font-size:13.5px;font-weight:600;letter-spacing:0;color:var(--text-3);margin-bottom:6px}
+.pcard-scale.is-unpub{font-size:22px;color:var(--text-3)}
+.pcard h3{font-size:20px;line-height:1.24;margin-top:16px}
+.pcard-meta{margin:18px 0 0;display:grid}
+.pcard-meta div{border-top:1px solid var(--line);padding:10px 0}
+.pcard-meta dt{font-size:13px;font-weight:600;color:var(--text-3);margin-bottom:2px}
+.pcard-meta dd{margin:0;font-size:15.5px;color:var(--text);line-height:1.5}
+.pcard-meta a{color:var(--teal);text-underline-offset:3px;text-decoration-thickness:1px}
+.pcard-meta a:hover{text-decoration-thickness:2px}
+.pcard-case,.cs-link{display:inline-flex;align-items:center;gap:8px;font-size:15.5px;font-weight:500;color:var(--teal);text-decoration:none}
+.pcard-case{margin-top:auto;padding-top:16px;border-top:1px solid var(--line)}
+.pcard-case svg,.cs-link svg{width:16px;height:16px;transition:transform .2s}
+.pcard-case:hover svg,.cs-link:hover svg{transform:translateX(3px)}
+.pcard-case:hover,.cs-link:hover{text-decoration:underline;text-underline-offset:4px}
+.pempty{background:var(--surface);border:1px dashed var(--text-3);padding:40px 32px;max-width:720px}
+.pempty p{color:var(--text-2)}
+.pempty a{margin-top:16px;display:inline-block}
+
+/* Case studies */
+.cs-layout{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:56px;align-items:start}
+.cs-side{position:sticky;top:calc(env(safe-area-inset-top,0px) + 100px)}
+.cs-side h2{font-size:clamp(32px,3.6vw,46px);max-width:12ch}
+.cs-side p{margin-top:20px;color:var(--text-2);max-width:44ch}
+.cs-list{list-style:none;margin:0;padding:0;border-top:2px solid var(--text)}
+.cs-row{display:grid;grid-template-columns:220px minmax(0,1fr);gap:32px;padding:30px 0;border-bottom:1px solid var(--line);align-items:center}
+.cs-illus{aspect-ratio:4/3;background-color:var(--illus);color:var(--illus-stroke);border:1px solid var(--line);
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:20px 20px;background-position:-1px -1px;padding:8px}
+.cs-illus svg{width:100%;height:100%}
+.cs-text h3{font-size:24px;line-height:1.2}
+.cs-text p{margin-top:10px;color:var(--text-2);font-size:16.5px;max-width:58ch}
+.cs-link{margin-top:16px}
+
+/* Delivery (dark, numbered) */
+.dark{background-color:var(--ink);color:var(--on-ink);background-image:repeating-linear-gradient(90deg,var(--line-ink) 0 1px,transparent 1px 86px)}
+.dark .section-head p{color:var(--on-ink-2)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:28px}
+.steps li{position:relative;padding-top:4px}
+.steps li::after{content:"";position:absolute;top:21px;left:46px;right:-28px;height:1px;background:rgba(255,255,255,.22)}
+.steps li:last-child::after{display:none}
+.step-n{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid var(--teal-on-ink);color:var(--teal-on-ink);font-weight:500;font-size:15px;background:var(--ink)}
+.steps h3{font-size:21px;margin-top:24px;line-height:1.2}
+.steps p{margin-top:12px;color:var(--on-ink-2);font-size:16px}
+.deliv-foot{margin-top:56px;padding-top:28px;border-top:1px solid rgba(255,255,255,.22);display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
+.deliv-foot p{color:var(--on-ink-2);max-width:62ch}
+.on-dark-link{color:var(--on-ink);font-weight:500;text-underline-offset:4px;text-decoration-color:rgba(255,255,255,.4);white-space:nowrap}
+.on-dark-link:hover{text-decoration-color:#FFFFFF}
+
+/* Turnkey */
+.tk-layout{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px;align-items:center}
+.tk-copy h2{font-size:clamp(32px,3.6vw,46px);max-width:13ch}
+.tk-copy p{margin-top:18px;color:var(--text-2);max-width:56ch}
+.tk-copy h2+p{margin-top:24px}
+.tk-copy .text-link{display:inline-block;margin-top:26px}
+.tk-figure{background:var(--surface);border:1px solid var(--line);padding:24px;color:var(--illus-stroke)}
+.tk-figure svg{width:100%;height:auto}
+
+/* Regions */
+.reg-shell{border-top:2px solid var(--text)}
+table.reg{border-collapse:collapse;width:100%}
+.reg th,.reg td{text-align:left;vertical-align:top;padding:20px 0;border-bottom:1px solid var(--line)}
+.reg thead th{font-size:13.5px;font-weight:600;color:var(--text-3);padding:14px 0}
+.reg tbody th{font-family:var(--f-head);font-size:21px;font-weight:600;letter-spacing:-.015em;width:280px;padding-right:24px}
+.reg ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.reg li{color:var(--text-2)}
+.reg a{color:var(--text);text-underline-offset:3px;text-decoration-color:var(--line);text-decoration-thickness:1px}
+.reg a:hover{color:var(--teal);text-decoration-color:currentColor}
+.reg-note{margin-top:22px;font-size:15.5px;color:var(--text-3)}
+
+/* FAQ */
+.faq-layout{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:56px}
+.faq-layout h2{font-size:clamp(32px,3.6vw,46px);max-width:14ch}
+.faq-layout .faq-side p{margin-top:24px}
+.faq-list{border-top:1px solid var(--line)}
+.faq-list details{border-bottom:1px solid var(--line)}
+.faq-list summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;position:relative;font-family:var(--f-head);font-size:20px;font-weight:500;letter-spacing:-.012em;line-height:1.3}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"";position:absolute;right:6px;top:50%;width:12px;height:12px;border-right:1.5px solid var(--text);border-bottom:1.5px solid var(--text);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+.faq-list details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.faq-list summary:hover{color:var(--teal)}
+.faq-list .answer{padding:0 44px 24px 0;color:var(--text-2);max-width:66ch}
+
+/* Closing CTA */
+.cta{background:var(--ink);color:var(--on-ink);padding:clamp(72px,9vw,112px) 0}
+.cta-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:64px;align-items:start}
+.cta h2{font-size:clamp(36px,4.4vw,58px);letter-spacing:-.03em;line-height:1.04;max-width:13ch}
+.cta-body{color:var(--on-ink-2);font-size:18px;max-width:52ch}
+.cta-still{margin-top:16px;color:var(--on-ink-2);font-size:16px}
+.cta .hero-actions{margin-top:32px}
+.next-steps{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.22);counter-reset:s}
+.next-steps li{display:flex;align-items:center;gap:16px;padding:20px 0;border-bottom:1px solid var(--line-ink);font-size:17px;counter-increment:s}
+.next-steps li::before{content:counter(s);display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border:1px solid var(--teal-on-ink);color:var(--teal-on-ink);font-size:14px;flex-shrink:0}
+.cta-contact{margin-top:28px;font-size:15.5px;color:var(--on-ink-2);line-height:1.8}
+.cta-contact a{color:var(--on-ink);text-underline-offset:3px;text-decoration-color:rgba(255,255,255,.35)}
+.cta-contact strong{color:var(--on-ink);font-weight:500}
+
+/* ---------- Footer (matches reference) ---------- */
+.site-footer{background:var(--ink);color:var(--on-ink-2);border-top:1px solid var(--line-ink)}
+.news{display:flex;justify-content:space-between;align-items:center;gap:40px;padding:84px 0 52px;border-bottom:1px solid rgba(255,255,255,.12)}
+.news h2{font-size:21px;color:var(--on-ink);letter-spacing:-.025em;font-weight:600}
+.news p{margin-top:8px;font-size:15px}
+.news form{display:flex;gap:11px;flex-shrink:0}
+.news input{width:286px;height:48px;background:transparent;border:1px solid rgba(255,255,255,.28);color:var(--on-ink);font:inherit;font-size:15px;padding:0 16px}
+.news input::placeholder{color:var(--on-ink-3)}
+.news input:focus{outline:none;border-color:var(--teal-on-ink)}
+.news button{height:51px;padding:0 24px;background:transparent;color:var(--on-ink);border:1px solid rgba(255,255,255,.7);font:inherit;font-size:16px;font-weight:500;cursor:pointer}
+.news button:hover{background:#FFFFFF;color:#1A2328}
+.news-msg{font-size:14px;color:var(--teal-on-ink);margin-top:8px;min-height:1em}
+.foot-cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;padding:54px 0 52px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-cols h3{font-size:15.5px;color:var(--on-ink);letter-spacing:-.02em;font-weight:600;margin-bottom:22px}
+.foot-cols ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.foot-cols a{text-decoration:none;font-size:15px;color:var(--on-ink-2);letter-spacing:.01em}
+.foot-cols a:hover{color:var(--on-ink)}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:28px 0 32px;font-size:14px}
+.foot-bottom ul{list-style:none;margin:0;padding:0;display:flex;gap:24px;flex-wrap:wrap}
+.foot-bottom a{text-decoration:none;color:var(--on-ink-3)}
+.foot-bottom a:hover{color:var(--on-ink)}
+.foot-bottom p{color:var(--on-ink-3)}
+
+
+
+/* ---------- Responsive ---------- */
+@media (max-width:1180px){
+  .main-nav ul{gap:22px}
+  .main-nav a{font-size:15.5px}
+  .steps{grid-template-columns:1fr;gap:0;border-top:1px solid rgba(255,255,255,.22)}
+  .steps li{display:grid;grid-template-columns:62px minmax(0,1fr);column-gap:8px;padding:26px 0;border-bottom:1px solid var(--line-ink)}
+  .steps li::after{display:none}
+  .steps .step-n{grid-row:span 2}
+  .steps h3{margin-top:4px}
+  .steps p{max-width:60ch}
+}
+@media (max-width:1040px){
+  .menu-btn{display:inline-flex;align-items:center}
+  .main-nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);z-index:40}
+  .main-nav.open{display:block}
+  .main-nav ul{flex-direction:column;gap:0;padding:8px var(--gutter) 16px}
+  .main-nav a{display:block;padding:13px 0;border-bottom:1px solid var(--line)}
+  .main-nav a[aria-current="page"]{color:var(--teal)}
+  .main-nav a[aria-current="page"]::after{display:none}
+  .site-header{position:relative}
+  .header-actions{display:flex;gap:10px;align-items:center}
+  .hero .wrap{grid-template-columns:1fr;gap:0;min-height:0}
+  .hero-figure{margin:0 calc(-1 * var(--gutter));padding:32px var(--gutter) 0}
+  .section-head,.faq-layout,.cta-grid,.cs-layout,.tk-layout{grid-template-columns:1fr;gap:22px}
+  .faq-layout,.cs-layout,.tk-layout{gap:36px}
+  .cs-side{position:static}
+  .pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .figs{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:28px}
+  .figs div:nth-child(3){padding-left:0;border-left:0}
+  .smap{--lab:150px}
+  .sm-ticks .wide{display:none}
+  .fcount{margin-left:0;width:100%}
+  .fbar-row{flex-wrap:wrap}
+  .news{flex-direction:column;align-items:flex-start}
+  .foot-cols{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:44px}
+  .deliv-foot{flex-direction:column;align-items:flex-start;gap:20px}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  .topbar-left a:not(:first-child),.topbar-loc{display:none}
+  .btn-quote{height:44px;padding:0 14px;font-size:15px}
+  .pgrid{grid-template-columns:1fr}
+  .pcard{scroll-margin-top:72px}
+  .news form{width:100%;flex-direction:column}
+  .news input,.news button{width:100%}
+  .foot-bottom{flex-direction:column;align-items:flex-start}
+  .hero-actions .btn{flex:1 1 auto}
+  .figs div{padding-right:12px}
+  .figs div+div{padding-left:16px}
+  .figs dd{font-size:30px;white-space:normal}
+  .smap{--lab:112px;padding:18px 14px 10px}
+  .smap-plotbg{top:18px;bottom:10px;left:calc(14px + var(--lab));right:14px}
+  .sm-label{font-size:12.5px;padding-right:8px}
+  .sm-bands .long{display:none}
+  .sm-bands .short{display:inline}
+  .sm-bands span{padding-left:6px;font-size:12.5px}
+  .sm-ticks .minor{display:none}
+  .sm-ticks span{font-size:11.5px}
+  .fbar-row{min-height:60px;padding:8px 0;gap:10px;flex-wrap:nowrap}
+  .ftoggle{display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 14px;background:transparent;border:1px solid var(--text);font:inherit;font-size:15px;font-weight:500;color:var(--text);cursor:pointer;flex-shrink:0}
+  .ftoggle b{font-weight:600;color:var(--teal)}
+  .fcount{margin-left:auto;width:auto;font-size:14px}
+  .ffields{display:none;position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);padding:12px var(--gutter) 16px;flex-direction:column;align-items:stretch;box-shadow:0 12px 24px rgba(0,0,0,.08)}
+  .ffields.open{display:flex}
+  .fld select{max-width:none;flex:1}
+  .freset{align-self:flex-start;padding:0}
+  .cs-row{grid-template-columns:1fr;gap:18px;padding:26px 0}
+  .cs-illus{max-width:320px}
+  .reg tbody th{width:auto;display:block;padding:20px 0 6px;border-bottom:0}
+  .reg td{display:block;padding:0 0 20px}
+  .reg thead{display:none}
+  .tk-figure{padding:14px}
+}
+@media (max-width:420px){
+  .logo{font-size:22px}
+  .btn-quote{display:none}
+  .nav-quote{display:block}
+  .foot-cols{grid-template-columns:1fr}
+  .figs{grid-template-columns:1fr}
+  .figs div+div{padding-left:0;border-left:0}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
+}
+
+@keyframes fu10{0%,10%{opacity:0;transform:translateY(1.2cqw)}16%,92%{opacity:1;transform:none}98%,100%{opacity:0;transform:translateY(1.2cqw)}}@keyframes fu18{0%,18%{opacity:0;transform:translateY(1.2cqw)}24%,92%{opacity:1;transform:none}98%,100%{opacity:0;transform:translateY(1.2cqw)}}@keyframes fu26{0%,26%{opacity:0;transform:translateY(1.2cqw)}32%,92%{opacity:1;transform:none}98%,100%{opacity:0;transform:translateY(1.2cqw)}}@keyframes fu34{0%,34%{opacity:0;transform:translateY(1.2cqw)}40%,92%{opacity:1;transform:none}98%,100%{opacity:0;transform:translateY(1.2cqw)}}@keyframes fu42{0%,42%{opacity:0;transform:translateY(1.2cqw)}48%,92%{opacity:1;transform:none}98%,100%{opacity:0;transform:translateY(1.2cqw)}}@keyframes fu50{0%,50%{opacity:0;transform:translateY(1.2cqw)}56%,92%{opacity:1;transform:none}98%,100%{opacity:0;transform:translateY(1.2cqw)}}@keyframes fu58{0%,58%{opacity:0;transform:translateY(1.2cqw)}64%,92%{opacity:1;transform:none}98%,100%{opacity:0;transform:translateY(1.2cqw)}}@keyframes fu66{0%,66%{opacity:0;transform:translateY(1.2cqw)}72%,92%{opacity:1;transform:none}98%,100%{opacity:0;transform:translateY(1.2cqw)}}@keyframes fu74{0%,74%{opacity:0;transform:translateY(1.2cqw)}80%,92%{opacity:1;transform:none}98%,100%{opacity:0;transform:translateY(1.2cqw)}}@keyframes bs0{0%,8%{opacity:.28;border-top-color:#DCE1DF}13%,90%{opacity:1;border-top-color:#1E7F74}96%,100%{opacity:.28;border-top-color:#DCE1DF}}@keyframes bs1{0%,24%{opacity:.28;border-top-color:#DCE1DF}29%,90%{opacity:1;border-top-color:#1E7F74}96%,100%{opacity:.28;border-top-color:#DCE1DF}}@keyframes bs2{0%,40%{opacity:.28;border-top-color:#DCE1DF}45%,90%{opacity:1;border-top-color:#1E7F74}96%,100%{opacity:.28;border-top-color:#DCE1DF}}@keyframes bs3{0%,56%{opacity:.28;border-top-color:#DCE1DF}61%,90%{opacity:1;border-top-color:#1E7F74}96%,100%{opacity:.28;border-top-color:#DCE1DF}}
+@keyframes aN{0%,8%{transform:translateY(130%)}16%,56%{transform:none}66%,100%{transform:translateY(130%)}}
+@keyframes aC{0%,18%{opacity:0;left:96cqw;top:58cqw;transform:scale(1)}24%{opacity:1;left:94cqw;top:56cqw}40%{opacity:1;left:85cqw;top:48.5cqw;transform:scale(1)}44%{transform:scale(.6)}48%{transform:scale(1);opacity:1}54%{opacity:0;left:85cqw;top:48.5cqw}70%{opacity:0;left:84cqw;top:57cqw}76%{opacity:1;left:66cqw;top:59cqw}88%{opacity:1;left:66cqw;top:59cqw;transform:scale(1)}92%{transform:scale(.6)}96%,100%{opacity:0;left:66cqw;top:59cqw}}
+@keyframes aE{0%,70%{border-bottom-color:transparent;color:#A3B0B5}76%,92%{border-bottom-color:#6FC0B3;color:#fff}100%{border-bottom-color:transparent;color:#A3B0B5}}
+@keyframes aBtn{0%,40%{background:#fff;color:#1A2328}46%,56%{background:#1A2328;color:#fff}60%,100%{background:#fff;color:#1A2328}}
+@keyframes bPr{0%,8%{width:0}72%,100%{width:100%}}
+@keyframes bSt{0%,74%{opacity:0;transform:scale(1.15) rotate(-3deg)}80%,92%{opacity:1;transform:rotate(-3deg)}98%,100%{opacity:0}}
+@keyframes cTy{0%,8%{width:0}12%{width:1ch}16%{width:2ch}22%,92%{width:3ch}100%{width:0}}
+@keyframes cCa{0%,50%{opacity:1}25%,75%{opacity:0}}
+@keyframes cAll{0%,76%{background:#1A2328;color:#fff}80%,92%{background:#fff;color:#1A2328}96%,100%{background:#1A2328;color:#fff}}
+@keyframes cEq{0%,76%{background:#fff;color:#1A2328}80%,92%{background:#1A2328;color:#fff}96%,100%{background:#fff;color:#1A2328}}
+@keyframes dBt{0%,56%{box-shadow:0 0 0 0 rgba(30,127,116,0)}62%{box-shadow:0 0 0 1cqw rgba(30,127,116,.35)}70%,100%{box-shadow:0 0 0 0 rgba(30,127,116,0)}}
+@keyframes d4{0%,6%{opacity:0;transform:translateY(1.2cqw)}12%,16%{opacity:1;transform:none}18%{opacity:.4;transform:translateX(.6cqw)}20%,92%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes eP{0%,8%{max-height:0}16%,44%{max-height:20cqw}52%,100%{max-height:0}}
+@keyframes eA{0%,52%{max-height:0}60%,86%{max-height:20cqw}94%,100%{max-height:0}}
+@keyframes eCP{0%,8%{transform:rotate(45deg)}16%,44%{transform:rotate(225deg)}52%,100%{transform:rotate(45deg)}}
+@keyframes eCA{0%,52%{transform:rotate(45deg)}60%,86%{transform:rotate(225deg)}94%,100%{transform:rotate(45deg)}}
+@keyframes prog{to{width:100%}}
+
+/* ---------- Prototype screens (always light, like a screenshot) ---------- */
+.scr{position:relative;container-type:inline-size;aspect-ratio:16/10;background:#F2F4F3;color:#1A2328;overflow:hidden;font-family:var(--f-body);font-size:2.2cqw;line-height:1.3;text-align:left}
+.scr *{box-sizing:border-box}
+.fx{animation-duration:8s;animation-iteration-count:infinite;animation-timing-function:ease-out}
+.m-top{height:7cqw;background:#1A2328;color:#fff;display:flex;align-items:center;gap:.6cqw;padding:0 3.5cqw;font-family:var(--f-head);font-size:2.8cqw}
+.m-top b{font-weight:600}.m-top span{font-weight:300;color:#A3B0B5}
+.m-top i{width:7cqw;height:.7cqw;background:#4B585E;margin-left:3cqw}.m-top i:first-of-type{margin-left:auto}
+.m-body{padding:3cqw 4cqw}
+.m-h{font-family:var(--f-head);font-size:4.2cqw;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+.m-sub{color:#6B787D;font-size:2cqw;margin-top:.8cqw}
+.m-panel{margin-top:2.2cqw;background:#E3EFEC;padding:1.8cqw 2.4cqw;font-size:2cqw;color:#4B585E}
+.m-panel b{display:block;font-family:var(--f-head);font-size:2.5cqw;color:#1A2328;margin-bottom:.6cqw}
+.m-l{display:block;height:1cqw;background:#C9D3D0;margin-top:1.1cqw}.m-l.s{width:58%}
+.m-foot{position:absolute;left:0;right:0;bottom:0;height:6cqw;background:#1A2328;color:#A3B0B5;font-size:1.8cqw;display:flex;align-items:center;gap:2.4cqw;padding:0 4cqw;white-space:nowrap}
+.m-foot em{font-style:normal;border-bottom:.25cqw solid transparent;animation:aE 8s infinite}
+.m-btn{display:inline-flex;align-items:center;justify-content:center;height:5.4cqw;padding:0 2.2cqw;font-size:1.9cqw;font-weight:500;border:1px solid #1A2328;background:#fff;color:#1A2328;white-space:nowrap}
+.m-btn.d{background:#1A2328;color:#fff}
+.m-notice{position:absolute;left:3cqw;right:3cqw;bottom:8cqw;background:#fff;border:1px solid #DCE1DF;box-shadow:0 1.4cqw 3cqw rgba(0,0,0,.18);padding:1.8cqw 2.2cqw;display:flex;align-items:center;gap:1.6cqw;font-size:1.8cqw;animation:aN 8s infinite}
+.m-notice p{flex:1;margin:0}
+.m-notice .m-btn:last-child{animation:aBtn 8s infinite}
+.m-cur{position:absolute;width:2.6cqw;height:2.6cqw;margin:-1.3cqw 0 0 -1.3cqw;border:.4cqw solid #1E7F74;background:rgba(30,127,116,.28);border-radius:50%;z-index:5;opacity:0;animation:aC 8s infinite}
+.m-steps{display:flex;gap:2cqw;margin-top:3cqw;position:relative}
+.m-st{flex:1;border-top:.7cqw solid #1E7F74;padding-top:1.6cqw;animation:bs0 8s infinite}
+.m-st b{display:block;font-family:var(--f-head);font-size:2.3cqw;margin-top:.8cqw;line-height:1.15}
+.m-n{display:inline-flex;width:4cqw;height:4cqw;align-items:center;justify-content:center;border:1px solid #1E7F74;color:#1E7F74;font-size:2cqw;font-weight:500}
+.m-stamp{margin-top:3.4cqw;display:inline-block;border:.5cqw solid #1E7F74;color:#1E7F74;padding:1cqw 2cqw;font-family:var(--f-head);font-weight:600;font-size:2.4cqw;transform:rotate(-3deg);animation:bSt 8s infinite}
+.m-sbar{display:flex;gap:1.4cqw;margin-top:2.2cqw}
+.m-in{flex:1;height:5.4cqw;border:1px solid #1A2328;background:#fff;display:flex;align-items:center;padding:0 2cqw;font-size:2.3cqw}
+.m-typed{display:inline-block;overflow:hidden;white-space:nowrap;width:3ch;animation:cTy 8s steps(1,end) infinite}
+.m-in u{width:.25cqw;height:3cqw;background:#1A2328;margin-left:.3cqw;animation:cCa 1s steps(1) infinite}
+.m-chips{display:flex;gap:1cqw;margin-top:2cqw;flex-wrap:nowrap;font-size:1.7cqw}
+.m-chips span{border:1px solid #1A2328;background:#fff;padding:.6cqw 1.5cqw;white-space:nowrap}
+.m-chips .c-all{background:#1A2328;color:#fff;animation:cAll 8s infinite}.m-chips .c-eq{animation:cEq 8s infinite}
+.m-cnt{font-size:1.8cqw;color:#4B585E;margin-top:1.8cqw}
+.m-res{display:grid;grid-template-columns:1fr auto;column-gap:2cqw;padding:1.1cqw 0;border-top:1px solid #DCE1DF;font-size:2cqw}
+.m-res b{font-family:var(--f-head);font-weight:600}.m-res span{color:#1E7F74;font-size:1.7cqw;text-align:right}
+.m-res code{grid-column:1/-1;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:1.6cqw;color:#6B787D}
+.m-c{text-align:center;display:flex;flex-direction:column;align-items:center;padding-top:2.2cqw}
+.m-404{font-family:var(--f-head);font-weight:600;font-size:11cqw;line-height:1;letter-spacing:-.04em;color:#1E7F74;animation-name:d4!important}
+.m-w{max-width:62cqw}.m-c .m-h{margin-top:.8cqw;font-size:3.8cqw}
+.m-row{display:flex;gap:1.4cqw;margin-top:2cqw}.d-b{animation:dBt 8s infinite}
+.m-in2{margin-top:2cqw;width:56cqw;height:5cqw;border:1px solid #1A2328;background:#fff;color:#6B787D;font-size:1.9cqw;display:flex;align-items:center;padding:0 2cqw;text-align:left}
+.m-gl{margin-top:2cqw}.m-g{border-top:1px solid #DCE1DF}
+.m-gh{display:flex;align-items:center;justify-content:space-between;height:4.4cqw;font-family:var(--f-head);font-size:2.3cqw}
+.m-gh i{width:1.1cqw;height:1.1cqw;border-right:.3cqw solid #1A2328;border-bottom:.3cqw solid #1A2328;transform:rotate(45deg);margin-right:1cqw}
+.m-gb{list-style:none;margin:0;padding:0 0 0 2cqw;overflow:hidden;max-height:0;font-size:1.9cqw;color:#4B585E;animation:eP 8s infinite}
+.m-gb li{padding:.5cqw 0;border-top:1px dashed #DCE1DF}
+.m-gh i{animation:eCP 8s infinite}
+
+/* ---------- Reel in hero ---------- */
+.hero .hero-figure{display:flex;flex-direction:column;justify-content:center;align-items:stretch;padding:40px 28px}
+.reel{width:100%}
+.dev{background:#fff;border:1px solid rgba(255,255,255,.22);box-shadow:0 26px 60px rgba(0,0,0,.4)}
+.dev-bar{height:30px;background:#E4E9E7;display:flex;align-items:center;gap:6px;padding:0 12px}
+.dev-bar i{width:9px;height:9px;border-radius:50%;background:#B1BCBF}
+.dev-url{margin-left:12px;flex:1;background:#fff;height:20px;border-radius:10px;font-size:12px;color:#4B585E;padding:0 12px;line-height:20px;font-family:ui-monospace,Menlo,Consolas,monospace}
+.dev-stage .scr[hidden]{display:none}
+.reel-ctl{display:flex;gap:14px;align-items:flex-end;margin-top:16px}
+.rc-play{width:44px;height:44px;flex-shrink:0;border:1px solid rgba(255,255,255,.34);background:transparent;color:#fff;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.rc-play:hover{border-color:#fff}.rc-play .i-play{display:none}.reel.paused .rc-play .i-play{display:block}.reel.paused .rc-play .i-pause{display:none}
+.rc-tabs{flex:1;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.rc-tabs button{background:none;border:0;padding:0;text-align:left;color:var(--on-ink-2);font:inherit;font-size:14px;cursor:pointer}
+.rc-tabs button:hover,.rc-tabs button.on{color:#fff}
+.rc-tabs .bar{display:block;height:3px;background:rgba(255,255,255,.2);margin-bottom:8px}
+.rc-tabs .bar span{display:block;height:100%;width:0;background:var(--teal-on-ink)}
+.rc-tabs button.on .bar span{animation:prog 8s linear forwards}
+.reel.paused *{animation-play-state:paused!important}
+
+/* ---------- Document blocks ---------- */
+.section-head h2{max-width:22ch}
+.blks{display:grid;gap:20px;grid-template-columns:minmax(0,1fr)}
+.blk{min-width:0;border:1px solid var(--line);padding:26px 28px 24px}
+.bg-surface .blk{background:var(--paper)}.bg-paper .blk{background:var(--surface)}.dark .blk{background:var(--ink-2)}
+.dark{--text:var(--on-ink);--text-2:var(--on-ink-2);--text-3:var(--on-ink-3);--line:rgba(255,255,255,.18);--teal:var(--teal-on-ink)}
+.dark .section-head p{color:var(--on-ink-2)}
+.blk-h{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:2px solid var(--text);padding-bottom:14px;margin-bottom:6px}
+.blk-h h3{font-size:24px}.nn{color:var(--teal);font-variant-numeric:tabular-nums;margin-right:6px}
+.anc{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;color:var(--text-3)}
+.fl{display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px;padding:13px 0;border-bottom:1px solid var(--line)}
+.fl-k{font-size:13.5px;font-weight:600;color:var(--teal);padding-top:3px}
+.fl p,.bp{max-width:78ch;color:var(--text)}.bp{padding:13px 0;border-bottom:1px solid var(--line)}
+.bl{margin:0;padding:12px 0 12px 22px;display:grid;gap:6px;max-width:78ch;border-bottom:1px solid var(--line)}
+.hl{font-family:var(--f-head);font-size:16px;font-weight:600;margin:20px 0 4px;color:var(--text-2)}
+.lk{list-style:none;margin:0;padding:0}
+.lk li{display:flex;justify-content:space-between;gap:20px;padding:9px 0;border-bottom:1px solid var(--line)}
+.lk li.sub{font-weight:600;background:var(--teal-soft);padding-left:12px;margin-top:6px}
+.dark .lk li.sub{background:rgba(255,255,255,.06)}
+.lk code,.code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14.5px;color:var(--text-3)}
+.code{margin:14px 0;padding:16px 18px;background:var(--ink);color:#DDE6E4;overflow-x:auto;line-height:1.7}
+.tbw{overflow-x:auto;margin-top:8px}
+table.tb{border-collapse:collapse;width:100%;font-size:15.5px}
+.tb th,.tb td{text-align:left;vertical-align:top;padding:13px 16px 13px 0;border-bottom:1px solid var(--line)}
+.tb thead th{font-size:13.5px;font-weight:600;color:var(--text-3)}
+.tb tbody td:first-child{font-weight:500;min-width:150px}
+mark.ph{background:rgba(232,170,20,.3);color:inherit;padding:0 3px}
+.pc-scr{border-bottom:1px solid var(--line)}
+.pc-k{font-size:13.5px;font-weight:600;color:var(--text-3);margin-bottom:6px;font-family:ui-monospace,Menlo,Consolas,monospace}
+.pc-c{margin-top:10px;color:var(--text-2);font-size:15.5px}
+.pgrid{margin-top:8px}.pgrid .pcard h3{margin-top:0}
+.hero h1{max-width:12ch}
+@media (max-width:1040px){.hero .hero-figure{padding:32px var(--gutter)}.fl{grid-template-columns:1fr;gap:2px}}
+@media (max-width:720px){
+  .blk{padding:20px 18px}.blk-h{flex-direction:column;gap:4px}
+  .tb thead{display:none}.tb,.tb tbody,.tb tr,.tb td{display:block}
+  .tb tr{border-bottom:2px solid var(--line);padding:8px 0}
+  .tb td{border:0;padding:5px 0}.tb td::before{content:attr(data-l);display:block;font-size:12.5px;font-weight:600;color:var(--text-3)}
+  .tb td[data-l=""]::before{display:none}.tb tbody td:first-child{min-width:0}
+  .rc-tabs button{font-size:12px}.lk li{flex-direction:column;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){.scr *,.rc-tabs .bar span{animation:none!important}.rc-tabs button.on .bar span{width:100%}}
+
+.legal{max-width:860px}.doc>*:first-child{margin-top:0}
+.eyebrow{color:var(--teal);font-weight:500;font-size:15px;margin-bottom:14px}
+.h2s{font-size:clamp(34px,4vw,52px);letter-spacing:-.03em;margin-bottom:18px}
+.lead{font-size:18px;color:var(--text-2);max-width:62ch;margin-bottom:34px}
+.doc .lead{margin-bottom:34px}
+.hero-trust.jl a{color:var(--on-ink-2);text-underline-offset:4px}.hero-trust.jl a:hover{color:#fff}
+.short{background:var(--teal-soft);padding:30px 32px;margin-bottom:12px}
+.short h3,.dsec h3{font-size:clamp(26px,2.8vw,32px)}
+.short p{margin-top:10px;color:var(--text-2)}
+.short dl,.rows{margin:18px 0 0;display:grid}
+.short dl>div,.rows>div{display:grid;grid-template-columns:170px minmax(0,1fr);gap:20px;padding:12px 0;border-top:1px solid rgba(26,35,40,.14)}
+.rows>div{border-top:1px solid var(--line)}
+.short dt,.rows dt{font-weight:600;font-family:var(--f-head)}.short dd,.rows dd{margin:0}
+.dsec{padding:44px 0 4px;scroll-margin-top:90px}.short{scroll-margin-top:90px}
+.dsec p,.short p{max-width:70ch}.dsec>p{margin-top:14px}
+.dsec .bl{margin:14px 0 0;padding-left:22px;border:0;display:grid;gap:8px;max-width:70ch}
+.dsec .tbw{margin-top:18px}.dsec .tb td,.dsec .tb th{padding-right:20px}
+.note{background:var(--paper);border-left:3px solid var(--teal);padding:14px 18px}
+.bg-paper .note{background:var(--surface)}
+.btn-line,.cs-btn{background:none;border:0;padding:0;font:inherit;color:var(--teal);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.cs-btn{color:var(--on-ink-2);text-decoration:none;font-size:15px}.cs-btn:hover{color:var(--on-ink)}
+.sform{display:flex;gap:10px;margin:8px 0 22px;max-width:640px}
+.sform input{flex:1;min-width:0;height:52px;border:1px solid var(--text);background:var(--surface);color:var(--text);font:inherit;padding:0 16px}
+.sform input:focus{outline:2px solid var(--teal);outline-offset:2px}
+.btn-d{height:52px;padding:0 26px;background:var(--btn-bg);color:var(--btn-fg);border:0;font:inherit;font-weight:500;cursor:pointer}
+.btn-d2{background:var(--btn-bg);color:var(--btn-fg)}.btn-o{border-color:var(--text);color:var(--text)}
+.sfil{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.sfil button{height:40px;padding:0 16px;border:1px solid var(--text);background:var(--surface);color:var(--text);font:inherit;font-size:15px;cursor:pointer}
+.sfil button[aria-pressed=true]{background:var(--btn-bg);color:var(--btn-fg)}
+.scount{color:var(--text-2);margin-bottom:6px;min-height:1.4em}
+.sres{list-style:none;margin:0;padding:0;border-top:2px solid var(--text)}
+.sres li{padding:16px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:2px 20px}
+.sres a{font-family:var(--f-head);font-weight:600;font-size:19px;text-decoration:none}.sres a:hover{color:var(--teal)}
+.sres span{color:var(--teal);font-size:14.5px}.sres code,.plist code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;color:var(--text-3);grid-column:1/-1}
+.mini{font-size:18px;margin:26px 0 10px}
+.plist{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.plist a{display:inline-block;border:1px solid var(--line);background:var(--surface);padding:9px 16px;text-decoration:none}.plist a:hover{border-color:var(--teal);color:var(--teal)}
+#search .plist a,#sitemap .plist a{background:var(--paper)}
+.smw{margin-top:26px;border-top:2px solid var(--text)}
+.smg{border-bottom:1px solid var(--line)}
+.smg summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;position:relative;font-family:var(--f-head);font-size:22px;font-weight:500}
+.smg summary::-webkit-details-marker{display:none}
+.smg summary::after{content:"";position:absolute;right:6px;top:50%;width:11px;height:11px;border-right:1.5px solid var(--text);border-bottom:1.5px solid var(--text);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+.smg[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.smg ul{list-style:none;margin:0;padding:0 0 18px;display:grid;gap:6px}.smg ul ul{padding:6px 0 4px 20px}
+.smg a{text-underline-offset:3px;text-decoration-color:var(--line)}.smg a:hover{color:var(--teal)}.smg .has>a{font-weight:600}
+.ck{position:fixed;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:60;max-width:900px;margin:0 auto;background:var(--surface);color:var(--text);border:1px solid var(--line);box-shadow:0 14px 40px rgba(0,0,0,.25);padding:18px 22px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.ck[hidden]{display:none}.ck p{flex:1 1 320px;font-size:15.5px}
+.ck-b{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.ck-btn{height:46px;min-width:140px;padding:0 20px;border:1px solid var(--text);background:var(--surface);color:var(--text);font:inherit;font-weight:500;cursor:pointer}.ck-btn:hover{background:var(--btn-bg);color:var(--btn-fg)}
+.ck-b a{color:var(--teal);font-size:15px}
+@media (max-width:720px){.short dl>div,.rows>div{grid-template-columns:1fr;gap:2px}.short{padding:22px 18px}.sform{flex-direction:column}.ck-btn{flex:1}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<!-- ===== Top bar ===== -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-left">
+      <a href="tel:+8613968006641">+86 139 6800 6641</a>
+      <a href="mailto:grace@kniktech.com">grace@kniktech.com</a>
+      <a href="https://wa.me/8613968006641">WhatsApp</a>
+    </div>
+    <div class="topbar-right">
+      <span class="topbar-loc">Shanghai · Lianyungang · Hangzhou</span>
+      <span class="topbar-lang">EN</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="KNIK BIO home"><b>KNIK</b><span>BIO</span></a>
+    <nav class="main-nav" id="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="/products/">Products</a></li>
+        <li><a href="/applications/">Applications</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li class="nav-quote"><a href="/request-a-quote/">Request a quote</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="btn-quote" href="/request-a-quote/">Request a quote</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title"><div class="wrap"><div class="hero-copy"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><span aria-current="page">Privacy policy</span></li></ol></nav><p class="hero-eyebrow">Legal</p><h1 id="hero-title">Privacy and cookie policy</h1><p class="hero-body">This page explains what we do with the personal data you send us and what the cookies on this site do. Last updated <mark class="ph">{publication date}</mark>.</p><div class="hero-actions"><a class="btn btn-light" href="#pp-short">The short version</a><a class="btn btn-ghost" href="#pp-rights">Your rights</a></div><p class="hero-trust jl"><a href="#pp-short">The short version</a> · <a href="#pp-collect">What we collect</a> · <a href="#pp-rights">Your rights</a> · <a href="#pp-cookies">Cookies</a> · <a href="#pp-contact">Contact</a></p></div><div class="hero-figure"><div class="reel" id="reel" role="region" aria-label="Animated prototype screens"><div class="dev"><div class="dev-bar"><i></i><i></i><i></i><span class="dev-url" id="reel-url">/privacy-policy/</span></div><div class="dev-stage"><div class="scr"><div class="m-top"><b>KNIK</b><span>BIO</span><i></i><i></i><i></i></div><div class="m-body"><div class="m-h">Privacy and cookie policy</div><div class="m-sub">Last updated {publication date}</div><div class="m-panel"><b>The short version</b>A quick summary. The full detail follows below.<span class="m-l"></span><span class="m-l s"></span></div><span class="m-l"></span><span class="m-l s"></span></div><div class="m-foot"><span>Privacy policy</span><span>Terms and conditions</span><span>Sitemap</span><em>Cookie settings</em></div><div class="m-notice"><p>We use analytics cookies to see which pages are useful. Nothing is shared with advertisers.</p><span class="m-btn">Accept</span><span class="m-btn">Only essential</span></div><span class="m-cur"></span></div><div class="scr" hidden><div class="m-top"><b>KNIK</b><span>BIO</span><i></i><i></i><i></i></div><div class="m-body"><div class="m-h">From enquiry to contract</div><div class="m-sub">Terms and conditions · 05</div><div class="m-steps"><div class="m-st" style="animation-name:bs0"><span class="m-n">1</span><b>You send an enquiry</b><span class="m-l"></span><span class="m-l s"></span></div><div class="m-st" style="animation-name:bs1"><span class="m-n">2</span><b>We send a quotation</b><span class="m-l"></span><span class="m-l s"></span></div><div class="m-st" style="animation-name:bs2"><span class="m-n">3</span><b>You accept in writing</b><span class="m-l"></span><span class="m-l s"></span></div><div class="m-st" style="animation-name:bs3"><span class="m-n">4</span><b>We confirm the order</b><span class="m-l"></span><span class="m-l s"></span></div></div><div class="m-stamp">Only at that point is there a contract.</div></div><div class="m-foot"><span>Privacy policy</span><span>Terms and conditions</span><span>Sitemap</span><em>Cookie settings</em></div></div><div class="scr" hidden><div class="m-top"><b>KNIK</b><span>BIO</span><i></i><i></i><i></i></div><div class="m-body"><div class="m-h">Search</div><div class="m-sbar"><div class="m-in"><span class="m-typed">5 L</span><u></u></div><span class="m-btn d">Search</span></div><div class="fx m-chips" style="animation-name:fu34"><span class="c-all">All</span><span class="c-eq">Equipment</span><span>Applications</span><span>Projects</span><span>Guides and downloads</span><span>News</span></div><div class="fx m-cnt" style="animation-name:fu42">Showing 3 results for "5 L"</div><div class="fx m-res" style="animation-name:fu42"><b>Lab scale systems</b><span>Product</span><code>/products/laboratory-bioreactors/</code></div><div class="fx m-res" style="animation-name:fu50"><b>Autoclavable glass bioreactors</b><span>Product</span><code>/products/glass-bioreactors-autoclavable/</code></div><div class="fx m-res" style="animation-name:fu58"><b>Benchtop stainless fermenters</b><span>Product</span><code>/products/benchtop-stainless-fermenters/</code></div></div></div><div class="scr" hidden><div class="m-top"><b>KNIK</b><span>BIO</span><i></i><i></i><i></i></div><div class="m-body m-c"><div class="fx m-404" style="animation-name:fu10">404</div><div class="fx m-h" style="animation-name:fu18">We couldn't find that page</div><div class="fx m-sub m-w" style="animation-name:fu26">The site was rebuilt in 2026, and some addresses changed. Start from the equipment range, or tell us what you were looking for.</div><div class="fx m-row" style="animation-name:fu34"><span class="m-btn d d-b">Browse equipment</span><span class="m-btn">Contact us</span></div><div class="fx m-in2" style="animation-name:fu42">Search equipment, applications or guides</div><div class="fx m-sub" style="animation-name:fu50">Applications · Projects · Request a quote · Sitemap</div></div></div><div class="scr" hidden><div class="m-top"><b>KNIK</b><span>BIO</span><i></i><i></i><i></i></div><div class="m-body"><div class="m-h">Sitemap</div><div class="m-sub">Every indexable page on this site in one list.</div><div class="m-gl"><div class="m-g"><div class="m-gh"><b>Products</b><i style=animation-name:eCP></i></div><ul class="m-gb" style="animation-name:eP"><li>Products overview</li><li>Lab scale</li><li>Pilot scale</li><li>Production scale</li></ul></div><div class="m-g"><div class="m-gh"><b>Applications</b><i style=animation-name:eCA></i></div><ul class="m-gb" style="animation-name:eA"><li>Applications overview</li><li>Vaccines and biopharmaceuticals</li><li>Recombinant proteins</li></ul></div><div class="m-g"><div class="m-gh"><b>Projects</b><i ></i></div></div><div class="m-g"><div class="m-gh"><b>Services</b><i ></i></div></div><div class="m-g"><div class="m-gh"><b>Resources</b><i ></i></div></div><div class="m-g"><div class="m-gh"><b>Company</b><i ></i></div></div></div></div></div></div></div><div class="reel-ctl"><button type="button" class="rc-play" aria-label="Pause animation"><svg class="i-pause" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg><svg class="i-play" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5l11 7-11 7z"/></svg></button><div class="rc-tabs"><button type="button" class=on aria-current="true"><span class="bar"><span></span></span>Privacy</button><button type="button" aria-current="false"><span class="bar"><span></span></span>Terms</button><button type="button" aria-current="false"><span class="bar"><span></span></span>Search</button><button type="button" aria-current="false"><span class="bar"><span></span></span>404</button><button type="button" aria-current="false"><span class="bar"><span></span></span>Sitemap</button></div></div></div></div></div></section>
+<nav class="section-nav" aria-label="On this page"><div class="wrap"><ul><li><a href="#prototypes">Prototypes</a></li><li><a href="#privacy">Privacy policy</a></li><li><a href="#terms">Terms and conditions</a></li><li><a href="#search">Search</a></li><li><a href="#notfound">404 page</a></li><li><a href="#sitemap">Sitemap</a></li></ul></div></nav>
+<section class="section bg-paper" id="prototypes" aria-labelledby="pr-t"><div class="wrap"><div class="section-head"><h2 id="pr-t">Prototype designs in motion</h2><p>Five animated screens, one for each page that carries copy. Each loops like a short video. Press play, pause or pick a scene in the reel at the top of the page.</p></div><div class="pgrid"><article class="pcard"><div class="pc-scr"><div class="scr"><div class="m-top"><b>KNIK</b><span>BIO</span><i></i><i></i><i></i></div><div class="m-body"><div class="m-h">Privacy and cookie policy</div><div class="m-sub">Last updated {publication date}</div><div class="m-panel"><b>The short version</b>A quick summary. The full detail follows below.<span class="m-l"></span><span class="m-l s"></span></div><span class="m-l"></span><span class="m-l s"></span></div><div class="m-foot"><span>Privacy policy</span><span>Terms and conditions</span><span>Sitemap</span><em>Cookie settings</em></div><div class="m-notice"><p>We use analytics cookies to see which pages are useful. Nothing is shared with advertisers.</p><span class="m-btn">Accept</span><span class="m-btn">Only essential</span></div><span class="m-cur"></span></div></div><div class="pcard-body"><p class="pc-k">Part 2 · /privacy-policy/</p><h3>Privacy and cookie policy</h3><p class="pc-c">The cookie notice gives Accept and Only essential the same size and weight. Nothing is pre-ticked. Analytics scripts do not load until someone accepts.</p></div></article><article class="pcard"><div class="pc-scr"><div class="scr"><div class="m-top"><b>KNIK</b><span>BIO</span><i></i><i></i><i></i></div><div class="m-body"><div class="m-h">From enquiry to contract</div><div class="m-sub">Terms and conditions · 05</div><div class="m-steps"><div class="m-st" style="animation-name:bs0"><span class="m-n">1</span><b>You send an enquiry</b><span class="m-l"></span><span class="m-l s"></span></div><div class="m-st" style="animation-name:bs1"><span class="m-n">2</span><b>We send a quotation</b><span class="m-l"></span><span class="m-l s"></span></div><div class="m-st" style="animation-name:bs2"><span class="m-n">3</span><b>You accept in writing</b><span class="m-l"></span><span class="m-l s"></span></div><div class="m-st" style="animation-name:bs3"><span class="m-n">4</span><b>We confirm the order</b><span class="m-l"></span><span class="m-l s"></span></div></div><div class="m-stamp">Only at that point is there a contract.</div></div><div class="m-foot"><span>Privacy policy</span><span>Terms and conditions</span><span>Sitemap</span><em>Cookie settings</em></div></div></div><div class="pcard-body"><p class="pc-k">Part 3 · /terms-and-conditions/</p><h3>From enquiry to contract</h3><p class="pc-c">Only at that point is there a contract.</p></div></article><article class="pcard"><div class="pc-scr"><div class="scr"><div class="m-top"><b>KNIK</b><span>BIO</span><i></i><i></i><i></i></div><div class="m-body"><div class="m-h">Search</div><div class="m-sbar"><div class="m-in"><span class="m-typed">5 L</span><u></u></div><span class="m-btn d">Search</span></div><div class="fx m-chips" style="animation-name:fu34"><span class="c-all">All</span><span class="c-eq">Equipment</span><span>Applications</span><span>Projects</span><span>Guides and downloads</span><span>News</span></div><div class="fx m-cnt" style="animation-name:fu42">Showing 3 results for "5 L"</div><div class="fx m-res" style="animation-name:fu42"><b>Lab scale systems</b><span>Product</span><code>/products/laboratory-bioreactors/</code></div><div class="fx m-res" style="animation-name:fu50"><b>Autoclavable glass bioreactors</b><span>Product</span><code>/products/glass-bioreactors-autoclavable/</code></div><div class="fx m-res" style="animation-name:fu58"><b>Benchtop stainless fermenters</b><span>Product</span><code>/products/benchtop-stainless-fermenters/</code></div></div></div></div><div class="pcard-body"><p class="pc-k">Part 4 · /search/</p><h3>Search</h3><p class="pc-c">Treat "5L" and "5 L" as the same search, and "fermenter" and "fermentor" as the same word.</p></div></article><article class="pcard"><div class="pc-scr"><div class="scr"><div class="m-top"><b>KNIK</b><span>BIO</span><i></i><i></i><i></i></div><div class="m-body m-c"><div class="fx m-404" style="animation-name:fu10">404</div><div class="fx m-h" style="animation-name:fu18">We couldn't find that page</div><div class="fx m-sub m-w" style="animation-name:fu26">The site was rebuilt in 2026, and some addresses changed. Start from the equipment range, or tell us what you were looking for.</div><div class="fx m-row" style="animation-name:fu34"><span class="m-btn d d-b">Browse equipment</span><span class="m-btn">Contact us</span></div><div class="fx m-in2" style="animation-name:fu42">Search equipment, applications or guides</div><div class="fx m-sub" style="animation-name:fu50">Applications · Projects · Request a quote · Sitemap</div></div></div></div><div class="pcard-body"><p class="pc-k">Part 5 · /404/</p><h3>We couldn't find that page</h3><p class="pc-c">Return a real 404 status. A friendly page that answers 200 is a soft 404, and search engines treat it as a live page.</p></div></article><article class="pcard"><div class="pc-scr"><div class="scr"><div class="m-top"><b>KNIK</b><span>BIO</span><i></i><i></i><i></i></div><div class="m-body"><div class="m-h">Sitemap</div><div class="m-sub">Every indexable page on this site in one list.</div><div class="m-gl"><div class="m-g"><div class="m-gh"><b>Products</b><i style=animation-name:eCP></i></div><ul class="m-gb" style="animation-name:eP"><li>Products overview</li><li>Lab scale</li><li>Pilot scale</li><li>Production scale</li></ul></div><div class="m-g"><div class="m-gh"><b>Applications</b><i style=animation-name:eCA></i></div><ul class="m-gb" style="animation-name:eA"><li>Applications overview</li><li>Vaccines and biopharmaceuticals</li><li>Recombinant proteins</li></ul></div><div class="m-g"><div class="m-gh"><b>Projects</b><i ></i></div></div><div class="m-g"><div class="m-gh"><b>Services</b><i ></i></div></div><div class="m-g"><div class="m-gh"><b>Resources</b><i ></i></div></div><div class="m-g"><div class="m-gh"><b>Company</b><i ></i></div></div></div></div></div></div><div class="pcard-body"><p class="pc-k">Part 6 · /sitemap/</p><h3>Sitemap</h3><p class="pc-c">Present each group as a collapsible or clearly separated section that works at phone width, with no more than two levels of nesting.</p></div></article></div></div></section>
+<section class="section bg-surface" id="privacy" aria-labelledby="pp-h"><div class="wrap"><div class="legal"><div class="doc"><div class="eyebrow">Privacy policy</div><div id="pp-h" class="sr">Privacy and cookie policy</div><div class="short" id="pp-short"><h3>The short version</h3><p>A quick summary. The full detail follows below.</p><dl><div><dt>What we collect</dt><dd>What you type into our forms, the files you attach, and basic visit data from cookies if you allow them.</dd></div><div><dt>Why</dt><dd>To reply to you, prepare a quotation, send the catalogue or certification pack you asked for, and learn which pages are useful.</dd></div><div><dt>Who sees it</dt><dd>Our export sales and engineering team, and the companies that host our website and deliver our email.</dd></div><div><dt>Selling</dt><dd>We do not sell your personal data, and we do not share cookie data with advertisers.</dd></div><div><dt>Cookies</dt><dd>Essential cookies only, unless you accept analytics. You can change your choice at any time.</dd></div><div><dt>Your rights</dt><dd>Ask to see, correct or delete your personal data at grace@kniktech.com.</dd></div></dl></div><div class="dsec" id="pp-who"><h3>Who is responsible for your personal data</h3><p>This site, knikbio.com, is run by Knik Technology, trading as KNIK BIO. Our headquarters and main works are at No. 48 Liuxiang Road, Jiading District, Shanghai, China. We decide why and how your personal data is used, which makes us the party responsible for it. <mark class="ph">{Registered legal name and number: confirm with the client.}</mark></p></div><div class="dsec" id="pp-collect"><h3>What we collect, and when</h3><p>There are five situations in which we receive personal data. In the first four, you choose what to send. The fifth happens automatically when you visit.</p><div class="tbw"><table class="tb"><thead><tr><th scope="col">When</th><th scope="col">What we receive</th></tr></thead><tbody><tr><td data-l="When">You send an enquiry or a quote request</td><td data-l="What we receive">Name, work email, company, country, phone or WhatsApp number and your message. Whatever you tell us about your process, volume and site. Any file you attach, such as a URS, a drawing or a room layout.</td></tr><tr><td data-l="When">You request the catalogue or the certification pack</td><td data-l="What we receive">Work email. For the pack, also your company, country and the reason you need it.</td></tr><tr><td data-l="When">You subscribe to technical updates</td><td data-l="What we receive">Work email.</td></tr><tr><td data-l="When">You email us, call us or message us on WhatsApp</td><td data-l="What we receive">Your contact details and whatever you write.</td></tr><tr><td data-l="When">You visit the site</td><td data-l="What we receive">Your IP address, browser and device type, the pages you open and how you reached us. Our server logs record this. Analytics cookies add to it only if you accept them.</td></tr></tbody></table></div><p class="note">This site has no checkout and takes no payment details. Payment terms are set in your quotation. Please do not send identity documents or health information. A quotation does not need them.</p></div><div class="dsec" id="pp-use"><h3>What we use it for</h3><div class="tbw"><table class="tb"><thead><tr><th scope="col">Purpose</th><th scope="col">Data used</th><th scope="col">Legal basis, where the law requires one</th></tr></thead><tbody><tr><td data-l="Purpose">Reply to your enquiry and prepare a quotation</td><td data-l="Data used">Enquiry details and files</td><td data-l="Legal basis, where the law requires one">Steps you asked for before a contract, and our legitimate interest in answering business enquiries</td></tr><tr><td data-l="Purpose">Send the catalogue or certification pack</td><td data-l="Data used">Work email, company</td><td data-l="Legal basis, where the law requires one">You asked for it</td></tr><tr><td data-l="Purpose">Send technical updates</td><td data-l="Data used">Work email</td><td data-l="Legal basis, where the law requires one">Your consent. You can unsubscribe at any time</td></tr><tr><td data-l="Purpose">Keep the site working and secure</td><td data-l="Data used">Server logs</td><td data-l="Legal basis, where the law requires one">Our legitimate interest</td></tr><tr><td data-l="Purpose">See which pages are useful</td><td data-l="Data used">Analytics cookies</td><td data-l="Legal basis, where the law requires one">Your consent</td></tr><tr><td data-l="Purpose">Keep order and export records after a sale</td><td data-l="Data used">Order details</td><td data-l="Legal basis, where the law requires one">A legal duty</td></tr></tbody></table></div><p>A catalogue or pack request is used to send that file and nothing else. It does not add you to the newsletter. If we intend to follow up, the form will tell you so before you submit it.</p></div><div class="dsec" id="pp-share"><h3>Who sees your personal data</h3><p>Inside KNIK BIO, your enquiry goes to export sales first. An engineer reads it if the question is technical. If you ask for a works visit, the colleagues hosting you see your name and dates.</p><p>Outside KNIK BIO, only the service providers that run the site for us receive it. They cover website hosting, email delivery, forms and analytics <mark class="ph">{provider names: fill from the build, or confirm that categories only will be listed}</mark>. They may use your personal data only to provide that service to us. If an order goes ahead, freight forwarders and customs agents receive the delivery details they need. We also disclose personal data when a law or a court requires it.</p><p>We do not sell your personal data.</p></div><div class="dsec" id="pp-transfer"><h3>Where your personal data goes</h3><p>We operate from China, so personal data you send us is received and processed in Shanghai. Our hosting and email providers may also store it in other countries <mark class="ph">{hosting and email locations: confirm}</mark>. Some countries require a safeguard, such as a contract clause, when personal data is transferred to China. Where your local law requires one, we will put it in place. Tell us in your message that it applies, and we will confirm what we can offer.</p></div><div class="dsec" id="pp-keep"><h3>How long we keep it</h3><p>We keep an enquiry for as long as we are dealing with it, and afterwards for <mark class="ph">{retention period for unconverted enquiries: confirm}</mark> unless the law or a live contract requires longer. If an enquiry leads to an order, the order records stay for the period that tax and export rules require. Newsletter details stay until you unsubscribe. Server logs are deleted after <mark class="ph">{number}</mark> days.</p><p>If you ask us to delete your personal data sooner, we will assess the request and act on it, except for records the law requires us to keep. We will tell you which records those are.</p></div><div class="dsec" id="pp-rights"><h3>Your choices and rights</h3><p>Depending on where you live, the law may give you rights over your personal data. We will honour the following requests wherever we reasonably can, whether or not your local law requires it. You can ask us to:</p><ul class="bl"><li>show you the personal data we hold about you</li><li>correct anything that is wrong</li><li>delete your personal data</li><li>stop using it for a particular purpose, such as the newsletter</li><li>send you a copy you can take elsewhere, where the law gives you that right</li></ul><p>You can also withdraw a consent at any time, by unsubscribing or by changing your cookie choice.</p><p>Email grace@kniktech.com with your request and the address you used when you wrote to us. We may ask you to confirm your identity. We aim to respond within 30 days. Where your law sets a different deadline, that deadline applies.</p><p>If you believe we have handled your personal data improperly, please tell us first so we can put it right. You may also complain to the data protection authority in your country.</p></div><div class="dsec" id="pp-cookies"><h3>Cookies</h3><p>Cookies are small files that a website saves in your browser. This site uses two categories, and a third only if a video host is embedded.</p><p>On your first visit, a notice asks you to choose. Essential cookies work without your consent. Analytics cookies are set only if you accept. We do not use advertising cookies.</p><div class="tbw"><table class="tb"><thead><tr><th scope="col">Type</th><th scope="col">What it does</th><th scope="col">Needs your consent</th><th scope="col">Cookies</th></tr></thead><tbody><tr><td data-l="Type">Essential</td><td data-l="What it does">Remembers your cookie choice, keeps forms working and protects the site from abuse</td><td data-l="Needs your consent">No</td><td data-l="Cookies"><mark class="ph">{names and lifetimes: list from the build scan}</mark></td></tr><tr><td data-l="Type">Analytics</td><td data-l="What it does">Counts visits and shows us which pages are useful. Nothing is shared with advertisers</td><td data-l="Needs your consent">Yes</td><td data-l="Cookies"><mark class="ph">{analytics tool and cookie names}</mark></td></tr><tr><td data-l="Type">Embedded video</td><td data-l="What it does">If another company hosts a video, that company may set its own cookies when you press play</td><td data-l="Needs your consent">Yes</td><td data-l="Cookies"><mark class="ph">{video host: confirm, or delete this row}</mark></td></tr></tbody></table></div><p><button type="button" class="btn-line" data-cs>Cookie settings</button> This control opens the notice again. It also sits in the footer of every page.</p><p>Every browser lets you block or delete cookies in its settings. Blocking essential cookies may stop forms from working.</p></div><div class="dsec" id="pp-other"><h3>Links, WhatsApp and other sites</h3><p>Some pages link to other sites, such as WhatsApp or a video host. Once you follow a link, that site's own policy applies. A message to our WhatsApp number is handled by WhatsApp under its terms until it reaches us, and by us from then on.</p><p>This site is written for business buyers. It is not aimed at children, and we do not knowingly collect their personal data.</p></div><div class="dsec" id="pp-security"><h3>How we protect it</h3><p>The site runs over HTTPS, so what you type travels encrypted. Access to enquiries is limited to the people dealing with them. No system is perfectly secure, and we cannot promise otherwise. If a breach affects your personal data, we will notify you and the relevant authorities where the law requires it.</p></div><div class="dsec" id="pp-changes"><h3>Changes to this policy</h3><p>The date at the top of this page changes whenever the page does. If we begin using your personal data in a new way, we will email newsletter subscribers before the change takes effect.</p></div><div class="dsec" id="pp-contact"><h3>Questions about your personal data</h3><p>Contact us using the details below.</p><p><a class="text-link" href="/contact/">Prefer a form? Use the enquiry form and choose "Something else"</a></p><dl class="rows"><div><dt>Contact</dt><dd>Export sales team · grace@kniktech.com · +86 139 6800 6641 <mark class="ph">{confirm whether a role-based privacy mailbox will replace this}</mark></dd></div><div><dt>Address</dt><dd>Knik Technology, No. 48 Liuxiang Road, Jiading District, Shanghai, China</dd></div></dl></div></div></div></div></section>
+<section class="section bg-paper" id="terms" aria-labelledby="tc-h"><div class="wrap"><div class="legal"><div class="doc"><div id="tc-h" class="sr">Terms and conditions</div><div class="eyebrow">Legal</div><h2 class="h2s">Terms and conditions</h2><p class="lead">These terms cover how you may use knikbio.com and how a quotation from us can become a contract. Last updated <mark class="ph">{publication date}</mark>.</p><div class="short" id="tc-short"><h3>The short version</h3><dl><div><dt>The site</dt><dd>Use it for genuine business purposes. Do not copy it in bulk, attack it or pretend to be us.</dd></div><div><dt>Specifications</dt><dd>What you read here is typical, not an offer. Your quotation states what you receive.</dd></div><div><dt>Contracts</dt><dd>Unless we agree otherwise in writing, a contract exists only when you accept a written quotation and we confirm the order in writing.</dd></div><div><dt>If the terms conflict</dt><dd>The signed contract prevails over this page.</dd></div><div><dt>Law</dt><dd><mark class="ph">{governing law: confirm with counsel}</mark></dd></div></dl></div><div class="dsec" id="tc-use"><h3>Using this site</h3><p>You may read this site, download the documents we offer and use our forms for genuine business enquiries. You may not:</p><ul class="bl"><li>copy or republish our content in bulk</li><li>send us anything unlawful or harmful, such as malware</li><li>attempt to break into the site or overload it</li><li>present yourself as KNIK BIO or as connected to us</li></ul><p>We may block anyone who does.</p></div><div class="dsec" id="tc-info"><h3>Information on this site</h3><p>We correct mistakes when we find them. The ranges, materials, accuracies and lead times shown here are standard values. Exact figures depend on vessel size and configuration, and are confirmed in your quotation, datasheet and drawings. Photographs and project pages show past work, and a system built for you may differ.</p><p>Nothing on this site is an offer, a guarantee or advice on your process. Please do not rely on it in place of a quotation.</p></div><div class="dsec" id="tc-orders"><h3>From enquiry to contract</h3><ol class="bl"><li>You send an enquiry. That is a request for a quotation, not an order.</li><li>We send a quotation with a specification, and a general arrangement drawing where the system is engineered to order. Every line is marked included or excluded. The quotation stays valid for <mark class="ph">{validity period: confirm}</mark>.</li><li>You accept the quotation in writing <mark class="ph">{acceptance method: confirm}</mark>. We then confirm the order in writing. Only at that point is there a contract.</li><li>Drawings, the P&amp;ID and the control philosophy go to you for sign-off before fabrication. Changes after approval may carry charges, as the quotation sets out.</li></ol><p>The contract consists of your accepted quotation and the terms attached to it. Payment milestones, delivery terms, who arranges freight and insurance, and the warranty are set there, not on this page.</p></div><div class="dsec" id="tc-warranty"><h3>Warranty</h3><p>Systems carry a <mark class="ph">{warranty period: confirm, currently twelve months in the draft}</mark> international warranty from commissioning, on the terms in your contract. Spare parts remain available after the warranty ends. This page does not change those terms.</p></div><div class="dsec" id="tc-export"><h3>Export, import and delivery</h3><p>We ship from China. Unless your quotation says otherwise, you are responsible for import licences, customs duties, taxes and local approvals in the country where the system will operate. We may decline or stop an order where trade-control or sanctions rules prohibit it. The delivery terms, and the export documents that travel with the shipment, are stated in your quotation and take precedence over this page.</p></div><div class="dsec" id="tc-ip"><h3>Our content and your files</h3><p>The text, photographs, drawings and design on this site belong to Knik Technology or its licensors <mark class="ph">{ownership of third-party images: confirm}</mark>. You may view them and share links to them. You may not reuse them commercially without our written permission.</p><p>Files you send us, such as a URS or a drawing, remain yours. We use them to prepare your quotation, as the privacy policy describes. If a file is commercially sensitive, tell us before you send it, and we will tell you whether a confidentiality agreement can be put in place first <mark class="ph">{confirmation: counsel and client}</mark>.</p><p><a class="text-link" href="#privacy">Privacy and cookie policy</a></p></div><div class="dsec" id="tc-liability"><h3>Our responsibility for the site</h3><p>This site is provided for general information, on an "as available" basis. We are not responsible for losses that result from relying on it instead of a quotation, from interruptions to the site, or from the content of sites we link to. Nothing here limits a liability that the law does not allow us to limit. Responsibility for equipment is set out in your contract. <mark class="ph">{Wording subject to counsel approval.}</mark></p></div><div class="dsec" id="tc-law"><h3>Governing law</h3><p>These terms are governed by <mark class="ph">{governing law}</mark>. Disputes about the use of this site go to <mark class="ph">{court or arbitration body}</mark>. A sales contract has its own governing-law clause.</p></div><div class="dsec" id="tc-contact"><h3>Changes and contact</h3><p>We may update these terms. The date at the top shows the latest version. Questions go to grace@kniktech.com or +86 139 6800 6641.</p><p><a class="text-link" href="/contact/">Contact page</a></p></div></div></div></div></section>
+<section class="section bg-surface" id="search" aria-label="Search"><div class="wrap"><div class="legal"><div class="eyebrow">Legal</div><h2 class="h2s">Search</h2><form class="sform" data-search role="search" novalidate><label class="sr" for="q1">Search equipment, applications or guides</label><input id="q1" type="search" name="q" placeholder="Search equipment, applications or guides" autocomplete="off"><button type="submit" class="btn-d">Search</button></form><div id="s-filters" class="sfil" role="group" aria-label="Filter results" hidden><button type="button" data-f="All" aria-pressed=true>All</button><button type="button" data-f="Equipment" aria-pressed=false>Equipment</button><button type="button" data-f="Applications" aria-pressed=false>Applications</button><button type="button" data-f="Projects" aria-pressed=false>Projects</button><button type="button" data-f="Guides and downloads" aria-pressed=false>Guides and downloads</button><button type="button" data-f="News" aria-pressed=false>News</button></div><p id="s-count" class="scount" role="status" aria-live="polite"></p><ul id="s-res" class="sres"></ul><div id="s-empty"><p>Type a volume, an organism or an equipment type. Try 5 L, yeast or airlift.</p><h3 class="mini">Popular pages</h3><ul class="plist"><li><a href="/products/laboratory-bioreactors/">Lab scale systems</a></li><li><a href="/products/cell-culture-bioreactors/">Cell culture bioreactors</a></li><li><a href="/products/gmp-bioreactor-systems/">GMP bioreactor systems</a></li><li><a href="/products/solid-state-fermenters/">Solid state fermenters</a></li><li><a href="/about/certifications/">Certifications and documents</a></li></ul></div><div id="s-none" hidden><p id="s-nonetxt">Nothing matched that. Try a volume, an organism or an equipment type.</p><ul class="plist"><li><a href="/products/">Browse equipment</a></li><li><a href="/contact/">Talk to an engineer</a></li></ul></div><div id="s-down" hidden><p>Search is not working right now. Browse the equipment range, or email <a class="text-link" href="mailto:grace@kniktech.com">grace@kniktech.com</a>.</p></div></div></div></section>
+<section class="section bg-paper" id="notfound" aria-label="Page not found"><div class="wrap"><div class="legal"><h2 class="h2s">We couldn't find that page</h2><p class="lead">The site was rebuilt in 2026, and some addresses changed. Start from the equipment range, or tell us what you were looking for.</p><div class="hero-actions"><a class="btn btn-d2" href="/products/">Browse equipment</a><a class="btn btn-o" href="/contact/">Contact us</a></div><form class="sform" data-search role="search" novalidate><label class="sr" for="q2">Search equipment, applications or guides</label><input id="q2" type="search" name="q" placeholder="Search equipment, applications or guides" autocomplete="off"><button type="submit" class="btn-d">Search</button></form><h3 class="mini">Other places to start</h3><ul class="plist"><li><a href="/applications/">Applications</a></li><li><a href="/projects/">Projects</a></li><li><a href="/request-a-quote/">Request a quote</a></li><li><a href="#sitemap">Sitemap</a></li></ul></div></div></section>
+<section class="section bg-surface" id="sitemap" aria-labelledby="sm-h"><div class="wrap"><div class="legal"><div class="eyebrow">Legal</div><h2 class="h2s" id="sm-h">Sitemap</h2><p class="lead">Every indexable page on this site in one list. Looking for something specific? Search is quicker.</p><p><a class="text-link" href="#search">Search</a></p><div class="smw"><details class="smg" open><summary>Products</summary><ul><li><a href="/products/">Products overview</a></li><li class="has"><a href="/products/laboratory-bioreactors/">Lab scale</a><ul><li><a href="/products/glass-bioreactors-autoclavable/">Autoclavable glass bioreactors</a></li><li><a href="/products/glass-bioreactors-sip/">SIP glass bioreactors</a></li><li><a href="/products/benchtop-stainless-fermenters/">Benchtop stainless fermenters</a></li><li><a href="/products/parallel-bioreactor-systems/">Parallel bioreactor systems</a></li><li><a href="/products/mini-bioreactors/">Mini bioreactors</a></li></ul></li><li class="has"><a href="/products/pilot-scale-fermenters/">Pilot scale</a><ul><li><a href="/products/stainless-steel-sip-fermenters/">Stainless steel SIP fermenters</a></li><li><a href="/products/multi-stage-fermenter-systems/">Multi-stage fermenter systems</a></li><li><a href="/products/seed-train-systems/">Seed train systems</a></li></ul></li><li class="has"><a href="/products/production-fermenters/">Production scale</a><ul><li><a href="/products/industrial-fermenters/">Industrial fermenters</a></li><li><a href="/products/gmp-bioreactor-systems/">GMP bioreactor systems</a></li><li><a href="/products/biopharmaceutical-process-modules/">Biopharmaceutical process modules</a></li></ul></li><li class="has"><a href="/products/specialised-bioreactors/">Specialised systems</a><ul><li><a href="/products/airlift-bioreactors/">Airlift bioreactors</a></li><li><a href="/products/photobioreactors/">Photobioreactors</a></li><li><a href="/products/solid-state-fermenters/">Solid state fermenters</a></li><li><a href="/products/cell-culture-bioreactors/">Cell culture bioreactors</a></li><li><a href="/products/custom-bioreactor-systems/">Custom bioreactor systems</a></li></ul></li><li class="has"><a href="/products/process-equipment/">Supporting equipment</a><ul><li><a href="/products/cip-sip-systems/">CIP and SIP systems</a></li><li><a href="/products/mixing-preparation-tanks/">Mixing and preparation tanks</a></li><li><a href="/products/centrifuges/">Centrifuges</a></li><li><a href="/products/high-pressure-homogenizers/">High pressure homogenizers</a></li><li><a href="/products/valves-piping-systems/">Valves and piping systems</a></li><li><a href="/products/spray-dryers/">Spray dryers</a></li></ul></li></ul></details><details class="smg"><summary>Applications</summary><ul><li><a href="/applications/">Applications overview</a></li><li><a href="/applications/vaccines-and-biopharmaceuticals/">Vaccines and biopharmaceuticals</a></li><li><a href="/applications/recombinant-proteins/">Recombinant proteins</a></li><li><a href="/applications/cell-culture/">Cell culture</a></li><li><a href="/applications/enzymes-and-industrial-fermentation/">Enzymes and industrial fermentation</a></li><li><a href="/applications/probiotics-and-food/">Probiotics and food</a></li><li><a href="/applications/agriculture-and-algae/">Agriculture and algae</a></li></ul></details><details class="smg"><summary>Projects</summary><ul><li><a href="/projects/">Projects overview</a></li><li><a href="/projects/gmp-hpv-vaccine-system/">GMP HPV vaccine system</a></li><li><a href="/projects/european-client-fermentor-line/">European fermenter line</a></li><li><a href="/projects/5000l-solid-state-system/">5,000 L solid state system</a></li><li><a href="/projects/multi-stage-multi-train/">Multi-stage, multi-train system</a></li><li><a href="/projects/2000l-automatic-gmp-fermentor/">2,000 L automatic GMP fermenter</a></li></ul></details><details class="smg"><summary>Services</summary><ul><li><a href="/services/">Installation and commissioning</a></li><li><a href="/services/turnkey-projects/">Turnkey projects</a></li></ul></details><details class="smg"><summary>Resources</summary><ul><li><a href="/resources/">Resources overview</a></li><li><a href="/resources/guides/lab-to-production-scale-up/">Scaling a process from laboratory to production</a></li><li><a href="/resources/guides/airlift-vs-mechanically-agitated/">Airlift or mechanically agitated</a></li><li><a href="/resources/guides/stainless-tank-sterilisation/">Sterilising a stainless steel fermentation tank</a></li><li><a href="/resources/guides/solid-state-fermentation/">Solid-state fermentation</a></li><li><a href="/resources/downloads/">Downloads</a></li><li><a href="/resources/videos/">Videos</a></li></ul></details><details class="smg"><summary>Company</summary><ul><li><a href="/about/">About KNIK BIO</a></li><li><a href="/about/manufacturing/">Manufacturing</a></li><li><a href="/about/certifications/">Certifications and documents</a></li><li><a href="/news/">News overview</a></li><li><a href="/news/#archive">News archive</a></li><li><a href="/faq/">FAQ</a></li></ul></details><details class="smg"><summary>Get in touch</summary><ul><li><a href="/contact/">Contact</a></li><li><a href="/request-a-quote/">Request a quote</a></li></ul></details><details class="smg"><summary>Legal and site</summary><ul><li><a href="/privacy-policy/">Privacy and cookie policy</a></li><li><a href="/terms-and-conditions/">Terms and conditions</a></li><li><a href="/search/">Search</a></li></ul></details></div></div></div></section>
+</main>
+
+<!-- ===== Footer (matches reference) ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="news">
+      <div>
+        <h2>Technical updates from our engineering team</h2>
+        <p>Occasional notes on fermentation process design, scale-up and equipment. No sales email.</p>
+      </div>
+      <div>
+        <form id="news-form" novalidate>
+          <label class="sr" for="news-email">Work email</label>
+          <input id="news-email" type="email" name="email" placeholder="name@company.com" autocomplete="email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="news-msg" id="news-msg" role="status"></p>
+      </div>
+    </div>
+
+    <div class="foot-cols">
+      <nav aria-label="Products">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="/products/laboratory-bioreactors/">Lab scale</a></li>
+          <li><a href="/products/pilot-scale-fermenters/">Pilot scale</a></li>
+          <li><a href="/products/production-fermenters/">Production scale</a></li>
+          <li><a href="/products/specialised-systems/">Specialised systems</a></li>
+          <li><a href="/products/supporting-equipment/">Supporting equipment</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Applications">
+        <h3>Applications</h3>
+        <ul>
+          <li><a href="/applications/vaccines-and-biopharmaceuticals/">Vaccine production</a></li>
+          <li><a href="/applications/recombinant-proteins/">Recombinant protein</a></li>
+          <li><a href="/applications/enzymes-and-industrial-fermentation/">Enzyme production</a></li>
+          <li><a href="/applications/probiotics-and-food/">Probiotics</a></li>
+          <li><a href="/applications/agriculture-and-algae/">Algae and spirulina</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Company">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="/about/">About KNIK BIO</a></li>
+          <li><a href="/about/history/">History</a></li>
+          <li><a href="/about/manufacturing/">Manufacturing</a></li>
+          <li><a href="/about/certifications/">Certifications</a></li>
+          <li><a href="/news/">News</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Contact">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="/request-a-quote/">Request a quote</a></li>
+          <li><a href="mailto:grace@kniktech.com">grace@kniktech.com</a></li>
+          <li><a href="tel:+8613968006641">+86 139 6800 6641</a></li>
+          <li><a href="https://wa.me/8613968006641">WhatsApp</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="foot-bottom">
+      <p>© 2026 Knik Technology. All rights reserved.</p>
+      <ul>
+        <li><a href="#privacy">Privacy policy</a></li>
+        <li><a href="#terms">Terms and conditions</a></li>
+        <li><a href="#pp-cookies">Cookie policy</a></li><li><button type="button" class="cs-btn" data-cs>Cookie settings</button></li>
+        <li><a href="#sitemap">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<div class="ck" id="ck" role="region" aria-label="Cookie notice" hidden><p>We use analytics cookies to see which pages are useful. Nothing is shared with advertisers.</p><div class="ck-b"><button type="button" class="ck-btn" data-ck="all">Accept</button><button type="button" class="ck-btn" data-ck="ess">Only essential</button><a href="#pp-cookies">Read the policy →</a></div></div>
+<script>
+(function(){
+var btn=document.querySelector('.menu-btn'),nav=document.getElementById('main-nav');
+if(btn&&nav){btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false');btn.textContent=o?'Close':'Menu';});}
+var links=[].slice.call(document.querySelectorAll('.section-nav a')),map={};
+links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.remove('is-active');a.removeAttribute('aria-current');});var a=map[e.target.id];if(a){a.classList.add('is-active');a.setAttribute('aria-current','true');var bar=a.closest('.wrap');if(bar){bar.scrollTo({left:a.offsetLeft-24,behavior:'smooth'});}}}});},{rootMargin:'-45% 0px -50% 0px'});
+Object.keys(map).forEach(function(id){var s=document.getElementById(id);if(s)io.observe(s);});}
+var reel=document.getElementById('reel');
+if(reel){
+  var scs=[].slice.call(reel.querySelectorAll('.dev-stage .scr')),tabs=[].slice.call(reel.querySelectorAll('.rc-tabs button')),url=document.getElementById('reel-url'),play=reel.querySelector('.rc-play'),cur=0,urls=['/privacy-policy/', '/terms-and-conditions/', '/search/', '/404/', '/sitemap/'];
+  function show(i){cur=i;scs.forEach(function(s,k){s.hidden=k!==i;});tabs.forEach(function(t,k){t.classList.remove('on');t.setAttribute('aria-current',k===i?'true':'false');if(k===i){void t.offsetWidth;t.classList.add('on');}});url.textContent=urls[i];}
+  tabs.forEach(function(t,k){t.addEventListener('click',function(){show(k);});});
+  reel.addEventListener('animationend',function(e){if(e.animationName==='prog'){show((cur+1)%scs.length);}});
+  play.addEventListener('click',function(){var p=reel.classList.toggle('paused');play.setAttribute('aria-label',p?'Play animation':'Pause animation');});
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){reel.classList.add('paused');}
+}
+var f=document.getElementById('news-form'),m=document.getElementById('news-msg'),i=document.getElementById('news-email');
+if(f){f.addEventListener('submit',function(ev){ev.preventDefault();if(!i.value||!i.checkValidity()){m.textContent='Enter a valid work email, such as name@company.com.';i.focus();return;}m.textContent='Thanks. Updates will go to '+i.value+'.';f.reset();});}
+})();
+
+(function(){
+var IDX=[{"t": "Products overview", "p": "/products/", "y": "Equipment"}, {"t": "Lab scale", "p": "/products/laboratory-bioreactors/", "y": "Equipment"}, {"t": "Autoclavable glass bioreactors", "p": "/products/glass-bioreactors-autoclavable/", "y": "Equipment"}, {"t": "SIP glass bioreactors", "p": "/products/glass-bioreactors-sip/", "y": "Equipment"}, {"t": "Benchtop stainless fermenters", "p": "/products/benchtop-stainless-fermenters/", "y": "Equipment"}, {"t": "Parallel bioreactor systems", "p": "/products/parallel-bioreactor-systems/", "y": "Equipment"}, {"t": "Mini bioreactors", "p": "/products/mini-bioreactors/", "y": "Equipment"}, {"t": "Pilot scale", "p": "/products/pilot-scale-fermenters/", "y": "Equipment"}, {"t": "Stainless steel SIP fermenters", "p": "/products/stainless-steel-sip-fermenters/", "y": "Equipment"}, {"t": "Multi-stage fermenter systems", "p": "/products/multi-stage-fermenter-systems/", "y": "Equipment"}, {"t": "Seed train systems", "p": "/products/seed-train-systems/", "y": "Equipment"}, {"t": "Production scale", "p": "/products/production-fermenters/", "y": "Equipment"}, {"t": "Industrial fermenters", "p": "/products/industrial-fermenters/", "y": "Equipment"}, {"t": "GMP bioreactor systems", "p": "/products/gmp-bioreactor-systems/", "y": "Equipment"}, {"t": "Biopharmaceutical process modules", "p": "/products/biopharmaceutical-process-modules/", "y": "Equipment"}, {"t": "Specialised systems", "p": "/products/specialised-bioreactors/", "y": "Equipment"}, {"t": "Airlift bioreactors", "p": "/products/airlift-bioreactors/", "y": "Equipment"}, {"t": "Photobioreactors", "p": "/products/photobioreactors/", "y": "Equipment"}, {"t": "Solid state fermenters", "p": "/products/solid-state-fermenters/", "y": "Equipment"}, {"t": "Cell culture bioreactors", "p": "/products/cell-culture-bioreactors/", "y": "Equipment"}, {"t": "Custom bioreactor systems", "p": "/products/custom-bioreactor-systems/", "y": "Equipment"}, {"t": "Supporting equipment", "p": "/products/process-equipment/", "y": "Equipment"}, {"t": "CIP and SIP systems", "p": "/products/cip-sip-systems/", "y": "Equipment"}, {"t": "Mixing and preparation tanks", "p": "/products/mixing-preparation-tanks/", "y": "Equipment"}, {"t": "Centrifuges", "p": "/products/centrifuges/", "y": "Equipment"}, {"t": "High pressure homogenizers", "p": "/products/high-pressure-homogenizers/", "y": "Equipment"}, {"t": "Valves and piping systems", "p": "/products/valves-piping-systems/", "y": "Equipment"}, {"t": "Spray dryers", "p": "/products/spray-dryers/", "y": "Equipment"}, {"t": "Applications overview", "p": "/applications/", "y": "Applications"}, {"t": "Vaccines and biopharmaceuticals", "p": "/applications/vaccines-and-biopharmaceuticals/", "y": "Applications"}, {"t": "Recombinant proteins", "p": "/applications/recombinant-proteins/", "y": "Applications"}, {"t": "Cell culture", "p": "/applications/cell-culture/", "y": "Applications"}, {"t": "Enzymes and industrial fermentation", "p": "/applications/enzymes-and-industrial-fermentation/", "y": "Applications"}, {"t": "Probiotics and food", "p": "/applications/probiotics-and-food/", "y": "Applications"}, {"t": "Agriculture and algae", "p": "/applications/agriculture-and-algae/", "y": "Applications"}, {"t": "Projects overview", "p": "/projects/", "y": "Projects"}, {"t": "GMP HPV vaccine system", "p": "/projects/gmp-hpv-vaccine-system/", "y": "Projects"}, {"t": "European fermenter line", "p": "/projects/european-client-fermentor-line/", "y": "Projects"}, {"t": "5,000 L solid state system", "p": "/projects/5000l-solid-state-system/", "y": "Projects"}, {"t": "Multi-stage, multi-train system", "p": "/projects/multi-stage-multi-train/", "y": "Projects"}, {"t": "2,000 L automatic GMP fermenter", "p": "/projects/2000l-automatic-gmp-fermentor/", "y": "Projects"}, {"t": "Installation and commissioning", "p": "/services/", "y": "Page"}, {"t": "Turnkey projects", "p": "/services/turnkey-projects/", "y": "Page"}, {"t": "Resources overview", "p": "/resources/", "y": "Guides and downloads"}, {"t": "Scaling a process from laboratory to production", "p": "/resources/guides/lab-to-production-scale-up/", "y": "Guides and downloads"}, {"t": "Airlift or mechanically agitated", "p": "/resources/guides/airlift-vs-mechanically-agitated/", "y": "Guides and downloads"}, {"t": "Sterilising a stainless steel fermentation tank", "p": "/resources/guides/stainless-tank-sterilisation/", "y": "Guides and downloads"}, {"t": "Solid-state fermentation", "p": "/resources/guides/solid-state-fermentation/", "y": "Guides and downloads"}, {"t": "Downloads", "p": "/resources/downloads/", "y": "Guides and downloads"}, {"t": "Videos", "p": "/resources/videos/", "y": "Guides and downloads"}, {"t": "About KNIK BIO", "p": "/about/", "y": "Page"}, {"t": "Manufacturing", "p": "/about/manufacturing/", "y": "Page"}, {"t": "Certifications and documents", "p": "/about/certifications/", "y": "Page"}, {"t": "News overview", "p": "/news/", "y": "News"}, {"t": "News archive", "p": "/news/#archive", "y": "News"}, {"t": "FAQ", "p": "/faq/", "y": "Page"}, {"t": "Contact", "p": "/contact/", "y": "Page"}, {"t": "Request a quote", "p": "/request-a-quote/", "y": "Page"}, {"t": "Privacy and cookie policy", "p": "/privacy-policy/", "y": "Page"}, {"t": "Terms and conditions", "p": "/terms-and-conditions/", "y": "Page"}, {"t": "Search", "p": "/search/", "y": "Page"}],ORD={Equipment:0,Applications:1,Projects:2,'Guides and downloads':3,News:4,Page:5};
+function norm(s){return s.toLowerCase().replace(/fermentor/g,'fermenter').replace(/[-_\/]+/g,' ').replace(/(\d)\s*l\b/g,'$1 l').replace(/\s+/g,' ').trim();}
+var forms=[].slice.call(document.querySelectorAll('[data-search]')),main=document.getElementById('q1'),filt=document.getElementById('s-filters'),cnt=document.getElementById('s-count'),res=document.getElementById('s-res'),emp=document.getElementById('s-empty'),none=document.getElementById('s-none'),nt=document.getElementById('s-nonetxt'),down=document.getElementById('s-down'),cur='All',lastQ='';
+function run(q,keep){
+  lastQ=q;if(!keep){cur='All';[].forEach.call(filt.querySelectorAll('button'),function(b){b.setAttribute('aria-pressed',b.dataset.f==='All'?'true':'false');});}
+  res.innerHTML='';none.hidden=true;down.hidden=true;
+  if(!q.trim()){filt.hidden=true;cnt.textContent='';emp.hidden=false;return;}
+  emp.hidden=true;filt.hidden=false;
+  try{
+    var n=norm(q),tk=n.split(' ').filter(function(t){return t.length>1;});
+    var all=IDX.filter(function(x){var h=norm(x.t+' '+x.p);return h.indexOf(n)>-1||(tk.length&&tk.every(function(t){return h.indexOf(t)>-1;}));});
+    all.sort(function(a,b){return ORD[a.y]-ORD[b.y];});
+    var shown=all.filter(function(x){return cur==='All'||x.y===cur;});
+    cnt.textContent='Showing '+shown.length+' results for "'+q+'"';
+    shown.forEach(function(x){var li=document.createElement('li'),a=document.createElement('a'),s=document.createElement('span'),c=document.createElement('code');a.href=x.p;a.textContent=x.t;s.textContent=x.y;c.textContent=x.p;li.appendChild(a);li.appendChild(s);li.appendChild(c);res.appendChild(li);});
+    if(!shown.length){none.hidden=false;nt.textContent=all.length?'Nothing in this category matched. Choose All to search the whole site.':'Nothing matched that. Try a volume, an organism or an equipment type.';}
+  }catch(e){down.hidden=false;cnt.textContent='';}
+}
+forms.forEach(function(f,i){f.addEventListener('submit',function(ev){ev.preventDefault();var q=f.querySelector('input').value;main.value=q;run(q,false);if(i>0){document.getElementById('search').scrollIntoView();}});});
+filt.addEventListener('click',function(ev){var b=ev.target.closest('button');if(!b)return;cur=b.dataset.f;[].forEach.call(filt.querySelectorAll('button'),function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});run(lastQ,true);});
+run('',false);
+var ck=document.getElementById('ck'),KEY='knik-cookie-choice';
+function get(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+function set(v){try{localStorage.setItem(KEY,v);}catch(e){}}
+if(!get())ck.hidden=false;
+ck.addEventListener('click',function(ev){var b=ev.target.closest('[data-ck]');if(!b)return;set(b.dataset.ck);ck.hidden=true;});
+[].forEach.call(document.querySelectorAll('[data-cs]'),function(b){b.addEventListener('click',function(){ck.hidden=false;ck.querySelector('button').focus();});});
+})();
+</script>
+</body>
+</html>
